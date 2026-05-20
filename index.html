@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ETF Tracker · 일일 신호 리포트 (2026-05-19)</title>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ETF Tracker · 일일 신호 리포트 · 2026-05-19</title>
 <style>
 :root{
   --bg:#ffffff; --bg-soft:#fafafa; --bg-card:#ffffff;
-  --ink:#0b0f17; --ink-2:#3a3f47; --ink-3:#6b727c; --ink-4:#9aa1ab;
-  --line:#ececec;
+  --ink:#0b0f17; --ink-2:#3a3f47; --ink-3:#6b727c; --ink-4:#9aa1ab; --line:#ececec;
   --brand:#0a66ff; --brand-soft:#eaf1ff;
   --buy:#0e8a4f; --buy-soft:#e7f6ee;
   --watch:#c2811a; --watch-soft:#fdf4e3;
@@ -14,441 +15,432 @@
   --danger:#c43c3c; --danger-soft:#fdecec;
   --radius:14px; --radius-sm:10px; --radius-xs:6px; --radius-pill:999px;
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg-soft);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Pretendard","Apple SD Gothic Neo","Malgun Gothic",Segoe UI,sans-serif;
-  font-variant-numeric:tabular-nums; letter-spacing:-0.005em; line-height:1.55;
-}
-.wrap{max-width:1180px;margin:0 auto;padding:28px 24px 64px}
-.hero{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px 28px 22px; box-shadow:0 1px 2px rgba(0,0,0,0.03); margin-bottom:22px}
-.eyebrow{font-size:12px;font-weight:600;color:var(--ink-3);letter-spacing:0.04em;text-transform:uppercase}
-h1{font-size:30px;font-weight:700;margin:6px 0 8px}
-.meta{color:var(--ink-3);font-size:13px}
-.mkt-line{margin-top:14px;font-size:14px;color:var(--ink-2);
-  display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:var(--radius-pill);
-  background:var(--brand-soft);color:var(--brand);font-weight:600}
-.mkt-line.buy{background:var(--buy-soft);color:var(--buy)}
-.mkt-line.watch{background:var(--watch-soft);color:var(--watch)}
-h2{font-size:19px;font-weight:700;margin:32px 0 14px;border-left:3px solid var(--ink);padding-left:10px}
-.section{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
-.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:20px 22px; position:relative; transition:transform .15s}
-.card.buy{border-color:var(--buy);box-shadow:0 0 0 1px rgba(14,138,79,.15)}
-.card.watch{border-color:var(--watch);box-shadow:0 0 0 1px rgba(194,129,26,.12)}
-.card.pass{border-color:var(--pass)}
-.card-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.badge{display:inline-block;padding:4px 10px;border-radius:var(--radius-pill);
-  font-size:12px;font-weight:700;letter-spacing:.02em}
-.badge.buy{background:var(--buy-soft);color:var(--buy)}
-.badge.watch{background:var(--watch-soft);color:var(--watch)}
-.badge.pass{background:var(--pass-soft);color:var(--pass)}
-.account{font-size:13px;color:var(--ink-3);font-weight:600}
-.ticker{font-size:18px;font-weight:700;margin:0 0 10px}
-.code{font-size:12px;color:var(--ink-3);font-weight:500}
-.score-row{display:flex;align-items:baseline;gap:14px;margin:6px 0 14px}
-.score-num{font-size:44px;font-weight:700;line-height:1}
-.score-deno{font-size:14px;font-weight:500;color:var(--ink-3);margin-left:2px}
-.tier-label{font-size:13px;font-weight:600;padding:4px 10px;border-radius:var(--radius-pill)}
-.tier-label.buy{background:var(--buy-soft);color:var(--buy)}
-.tier-label.watch{background:var(--watch-soft);color:var(--watch)}
-.tier-label.pass{background:var(--pass-soft);color:var(--pass)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.chip{font-size:12px;padding:4px 10px;border-radius:var(--radius-pill);
-  background:var(--bg-soft);border:1px solid var(--line);color:var(--ink-2)}
-.chip.rsi14{background:var(--brand-soft);color:var(--brand);border-color:transparent}
-.chip.wd{background:var(--pass-soft);color:var(--ink-2);border-color:transparent}
-.contrib{font-size:12px;color:var(--ink-3);margin-bottom:8px}
-.change-line{font-size:13px;color:var(--ink-2);margin:8px 0;padding:8px 10px;background:var(--bg-soft);border-radius:var(--radius-xs)}
-.change-line .diff{font-weight:700;margin-right:8px}
-.change-line .diff.up{color:var(--buy)}
-.change-line .diff.down{color:var(--danger)}
-.change-line .diff.flat{color:var(--ink-3)}
-.change-line .delta{color:var(--ink-3)}
-.change-line.first{font-style:italic;color:var(--ink-3)}
-.rank-line{margin-top:4px;font-size:12px;color:var(--brand);font-weight:600}
-.streak{font-size:12px;color:var(--ink-3);margin-top:6px}
-.explain-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.explain{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px}
-.explain h3{font-size:16px;font-weight:700;margin:0 0 8px}
-.explain p{margin:6px 0;font-size:14px;color:var(--ink-2)}
-.warn-box{background:var(--watch-soft);color:var(--watch);padding:12px 16px;border-radius:var(--radius-sm);margin:12px 0;font-size:13px}
-.info-box{background:var(--brand-soft);color:var(--brand);padding:10px 14px;border-radius:var(--radius-sm);margin:10px 0;font-size:13px}
-.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-sm)}
-table{min-width:760px;width:100%;border-collapse:collapse;background:var(--bg-card)}
-thead{position:sticky;top:0;background:var(--bg-card)}
-th{font-size:12px;font-weight:600;color:var(--ink-3);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:0.03em}
-td{font-size:13px;padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink-2)}
-td.name{color:var(--ink);font-weight:600}
-td.num{text-align:right}
-td .code-sm{font-size:11px;color:var(--ink-3);font-weight:500;margin-top:2px}
-tbody tr:hover{background:#fafbfd}
-tr.group-head td{background:var(--bg-soft);color:var(--ink-3);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:8px 12px}
-.flag{display:inline-block;padding:2px 8px;border-radius:var(--radius-pill);font-size:11px;font-weight:600}
-.flag.danger{background:var(--danger-soft);color:var(--danger)}
-.flag.watch{background:var(--watch-soft);color:var(--watch)}
-.bars-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.bar-group{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
-.bar-group h4{font-size:14px;font-weight:600;margin:0 0 10px}
-.bar-row{display:grid;grid-template-columns:80px 1fr;align-items:center;gap:8px;margin:6px 0}
-.bar-row.total{margin-top:10px;padding-top:8px;border-top:1px solid var(--line)}
-.bar-lab{font-size:12px;color:var(--ink-3)}
-.bar{position:relative;background:var(--bg-soft);border-radius:var(--radius-pill);height:14px;overflow:hidden}
-.bar-fill{height:100%;border-radius:var(--radius-pill)}
-.bar-fill.buy{background:var(--buy)}
-.bar-fill.watch{background:var(--watch)}
-.bar-fill.pass{background:var(--pass)}
-.bar-fill.na{width:100%;background:repeating-linear-gradient(45deg,#eee,#eee 4px,#fff 4px,#fff 8px)}
-.bar-val{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:11px;color:var(--ink-2);font-weight:600}
-.calc-explain{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.calc-explain p{margin:6px 0;font-size:13px;color:var(--ink-2)}
-.calc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
-.calc-grid .calc-card{padding:12px 14px;border-radius:var(--radius-sm);text-align:center;font-size:13px;font-weight:600}
-.calc-grid .calc-card.buy{background:var(--buy-soft);color:var(--buy)}
-.calc-grid .calc-card.watch{background:var(--watch-soft);color:var(--watch)}
-.calc-grid .calc-card.pass{background:var(--pass-soft);color:var(--pass)}
-.weight-tbl{margin:10px 0;font-size:13px}
-.weight-tbl td{padding:4px 12px;border:none}
-details.guide{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:0 22px}
-details.guide summary{cursor:pointer;font-weight:600;padding:16px 0;font-size:15px;outline:none}
-details.guide[open] summary{border-bottom:1px solid var(--line)}
-details.guide .guide-body{padding:16px 0 22px;font-size:13px;color:var(--ink-2)}
-details.guide table{min-width:auto;width:100%}
-.footer{margin-top:32px;padding:18px 22px;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);font-size:12px;color:var(--ink-3);text-align:center}
-
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#121212; --bg-soft:#1e1e1e; --bg-card:#252525;
-    --ink:#f0f0f0; --ink-2:#d0d0d0; --ink-3:#a0a0a0; --ink-4:#707070;
-    --line:#333; --brand:#4d94ff; --brand-soft:#1a2e4a;
+    --ink:#f0f0f0; --ink-2:#d0d0d0; --ink-3:#a0a0a0; --ink-4:#707070; --line:#333;
+    --brand:#4d94ff; --brand-soft:#1a2e4a;
     --buy:#2ecc71; --buy-soft:#1a3d2a;
     --watch:#e6a817; --watch-soft:#3d3011;
     --pass:#888; --pass-soft:#2a2a2a;
     --danger:#e74c3c; --danger-soft:#3d1a1a;
   }
-  tbody tr:hover{background:#2a2c30}
-  .bar-fill.na{background:repeating-linear-gradient(45deg,#333,#333 4px,#222 4px,#222 8px)}
 }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg-soft);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Pretendard","Apple SD Gothic Neo","Malgun Gothic",Segoe UI,sans-serif;
+  letter-spacing:-0.005em; line-height:1.55; font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:28px 24px 80px}
+.hero{background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius);
+  padding:24px 26px; box-shadow:0 1px 2px rgba(0,0,0,.03); margin-bottom:22px;}
+.eyebrow{font-size:12px; color:var(--ink-3); letter-spacing:0.04em; text-transform:uppercase; font-weight:600}
+h1{margin:6px 0 8px; font-size:30px; font-weight:700; letter-spacing:-0.012em; color:var(--ink)}
+.meta{color:var(--ink-3); font-size:13px}
+.meta span+span{margin-left:14px; padding-left:14px; border-left:1px solid var(--line)}
+.market{margin-top:14px; padding:10px 14px; border:1px solid var(--line); border-radius:var(--radius-sm);
+  background:var(--bg-soft); font-size:14px; color:var(--ink-2)}
+.market b{color:var(--ink)}
+.notice-box{margin-top:12px; padding:10px 14px; border-radius:var(--radius-sm); font-size:13px}
+.notice-watch{background:var(--watch-soft); color:var(--watch); border:1px solid var(--watch)}
+h2{font-size:19px; font-weight:700; margin:36px 0 14px; padding-left:10px;
+  border-left:3px solid var(--ink); color:var(--ink)}
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.card{background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius);
+  padding:20px 22px; box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.sig-acct{font-size:12px; color:var(--ink-3); font-weight:600; letter-spacing:0.04em; text-transform:uppercase}
+.sig-name{font-size:18px; font-weight:700; margin:4px 0 2px; color:var(--ink)}
+.sig-code{font-size:12px; color:var(--ink-4)}
+.score-row{display:flex; align-items:baseline; gap:8px; margin:14px 0 10px}
+.score-num{font-size:44px; font-weight:700; line-height:1; color:var(--ink)}
+.score-deno{font-size:14px; font-weight:500; color:var(--ink-3)}
+.pill{display:inline-block; padding:4px 10px; border-radius:var(--radius-pill); font-size:12px; font-weight:600}
+.pill-buy{background:var(--buy-soft); color:var(--buy)}
+.pill-watch{background:var(--watch-soft); color:var(--watch)}
+.pill-pass{background:var(--pass-soft); color:var(--pass)}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin:10px 0 12px}
+.chip{font-size:12px; padding:4px 9px; background:var(--bg-soft); border:1px solid var(--line);
+  border-radius:var(--radius-pill); color:var(--ink-2)}
+.chip b{color:var(--ink); font-weight:600}
+.contrib{font-size:13px; color:var(--ink-2); margin:8px 0 6px}
+.contrib b{color:var(--ink)}
+.change{font-size:13px; color:var(--ink-2)}
+.change .up{color:var(--buy); font-weight:600}
+.change .down{color:var(--danger); font-weight:600}
+.persist{font-size:12px; color:var(--ink-3); margin-top:4px}
+.watch-big{font-size:24px; font-weight:700; color:var(--watch)}
+.watch-reason{font-size:13px; color:var(--ink-2); margin-top:6px}
+.commentary{font-size:14px; color:var(--ink-2); line-height:1.65}
+.commentary ul{margin:6px 0 0 0; padding-left:18px}
+.commentary li{margin:4px 0}
+.commentary .lead{font-weight:600; color:var(--ink); margin-bottom:6px}
+.table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius); background:var(--bg-card)}
+table{width:100%; min-width:760px; border-collapse:collapse; font-size:13px}
+thead th{position:sticky; top:0; background:var(--bg-card); color:var(--ink-3);
+  font-weight:600; text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); white-space:nowrap}
+tbody td{padding:10px 12px; border-bottom:1px solid var(--line); color:var(--ink-2); white-space:nowrap}
+tbody tr:hover{background:#fafbfd}
+@media (prefers-color-scheme: dark){ tbody tr:hover{background:#2a2c30} }
+.tbl-sub{font-size:12px; color:var(--ink-3); margin:14px 0 6px; font-weight:600}
+.bars-row{display:grid; grid-template-columns:200px 1fr; gap:12px; align-items:center;
+  padding:10px 0; border-bottom:1px solid var(--line)}
+.bars-row:last-child{border-bottom:none}
+.bars-name{font-size:13px; font-weight:600; color:var(--ink)}
+.bars-name .c{display:block; font-size:11px; color:var(--ink-4); font-weight:500}
+.bars-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px}
+.bar{display:flex; flex-direction:column; gap:3px}
+.bar-label{font-size:11px; color:var(--ink-3); font-weight:600}
+.bar-track{position:relative; height:18px; background:var(--bg-soft); border-radius:var(--radius-xs); overflow:hidden}
+.bar-fill{position:absolute; left:0; top:0; bottom:0; background:var(--brand); border-radius:var(--radius-xs)}
+.bar-na{position:absolute; inset:0;
+  background:repeating-linear-gradient(45deg, #eee, #eee 4px, #f5f5f5 4px, #f5f5f5 8px);
+  display:flex; align-items:center; justify-content:center; font-size:10px; color:var(--ink-3); font-weight:600}
+@media (prefers-color-scheme: dark){
+  .bar-na{background:repeating-linear-gradient(45deg, #333, #333 4px, #3a3a3a 4px, #3a3a3a 8px); color:var(--ink-3)}
+}
+.bar-val{font-size:11px; color:var(--ink-2); display:flex; justify-content:space-between; gap:6px}
+.bar-val b{color:var(--ink); font-weight:600}
+.calc{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin:10px 0 14px}
+.calc-card{background:var(--bg-soft); border:1px solid var(--line); border-radius:var(--radius-sm); padding:12px}
+.calc-card h4{margin:0 0 6px; font-size:13px; font-weight:700; color:var(--ink)}
+.calc-card p{margin:0; font-size:12px; color:var(--ink-3); line-height:1.5}
+.grade{display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-top:10px}
+.grade-card{padding:12px; border-radius:var(--radius-sm)}
+.grade-buy{background:var(--buy-soft); border:1px solid var(--buy); color:var(--buy)}
+.grade-watch{background:var(--watch-soft); border:1px solid var(--watch); color:var(--watch)}
+.grade-pass{background:var(--pass-soft); border:1px solid var(--pass); color:var(--pass)}
+.grade-card h4{margin:0 0 4px; font-size:14px; font-weight:700}
+.grade-card p{margin:0; font-size:12px}
+details{background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius); padding:14px 18px}
+summary{cursor:pointer; font-weight:600; color:var(--ink); font-size:14px}
+.guide{display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-top:12px}
+.guide-card{background:var(--bg-soft); border:1px solid var(--line); border-radius:var(--radius-sm); padding:12px}
+.guide-card h4{margin:0 0 6px; font-size:13px; font-weight:700; color:var(--ink)}
+.guide-card p{margin:0; font-size:12px; color:var(--ink-3); line-height:1.55}
+footer{margin-top:36px; padding-top:20px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--ink-4); text-align:center}
 @media (max-width:960px){
-  .cards-grid,.explain-grid,.bars-grid{grid-template-columns:1fr}
-  .calc-grid{grid-template-columns:repeat(2,1fr)}
+  .grid-2{grid-template-columns:1fr}
+  .bars-row{grid-template-columns:1fr; gap:8px}
+  .grade{grid-template-columns:repeat(2, 1fr)}
 }
 @media (max-width:760px){
-  .cards-grid,.explain-grid,.bars-grid,.calc-grid{grid-template-columns:1fr}
   .wrap{padding:16px}
   h1{font-size:24px}
+  .calc, .guide, .grade{grid-template-columns:1fr}
+  .bars-grid{grid-template-columns:1fr 1fr}
 }
 @media print{
-  .card,.section,.hero,.bar-group,.explain,.calc-explain,details.guide,.footer{box-shadow:none}
-  :root{--line:#ddd}
+  body{background:#fff}
+  .card, .hero, .table-wrap, details{box-shadow:none; border-color:#ddd}
 }
 </style>
-</head><body><div class="wrap">
+</head>
+<body>
+<div class="wrap">
 
-<header class="hero">
-  <div class="eyebrow">ETF Tracker · 일일 신호 리포트</div>
-  <h1>오늘의 적립 매수 신호</h1>
-  <div class="meta">데이터 기준일 <strong>2026-05-19</strong> · CSV 최종 갱신 2026-05-19 16:00 KST · 분석 2026-05-19 18:27 KST</div>
-  <div class="mkt-line neutral">시장 중립~강세 · 평균 disp20 +1.48%</div>
-  
-  
-  
-</header>
-
-<h2>오늘의 신호</h2>
-<div class="cards-grid">
-  <article class="card buy" aria-label="ISA 신호 카드">
-  <header class="card-head">
-    <span class="badge buy">오늘의 신호</span>
-    <span class="account">ISA</span>
+  <header class="hero">
+    <div class="eyebrow">ETF Tracker · 일일 신호 리포트</div>
+    <h1>2026-05-19 거래일 분석</h1>
+    <div class="meta">
+      <span>오늘 KST: 2026-05-20 (수)</span>
+      <span>데이터 기준일: 2026-05-19</span>
+      <span>생성: 2026-05-20 10:30:28 KST</span>
+    </div>
+    <div class="market">
+      시장 상태: <b>시장 중립~강세</b> · 정기 종목 RSI 평균 <b>59.6</b>, 20일 이격도 평균 <b>+1.48%</b>
+    </div>
   </header>
-  <div class="card-body">
-    <h3 class="ticker">ACE 미국30년국채액티브 <span class="code">(453850)</span></h3>
-    <div class="score-row">
-      <div class="score-num">66.72<span class="score-deno">/100</span></div>
-      <div class="tier-label buy">매수 우선 검토</div>
-    </div>
-    <div class="chips">
-      <span class="chip disp20">20일 이격: -2.58%</span><span class="chip disp60">60일 이격: -3.89%</span><span class="chip rsi14">RSI: 26.9</span><span class="chip wd">비중편차: +0.94%</span>
-    </div>
-    <div class="contrib">점수 기여도: disp20 +20.5 · disp60 +6.3 · RSI +30.0 · 비중편차 +9.9</div>
-    <div class="change-line">
-  <span class="diff down">-1.53점 ▼</span>
-  <span class="delta">변화 기여: RSI +0.0 / disp20 -0.2 / disp60 -0.0 / <strong>비중편차 -1.3</strong></span>
-  
-</div>
-    <div class="streak">신호 지속 2일째</div>
-  </div>
-</article>
-  <article class="card pass" aria-label="연금저축 신호 카드">
-  <header class="card-head">
-    <span class="badge pass">오늘은 관망</span>
-    <span class="account">연금저축</span>
-  </header>
-  <div class="card-body">
-    <h3 class="ticker">ACE 미국배당다우존스 <span class="code">(402970)</span></h3>
-    <div class="score-row">
-      <div class="score-num">30.40<span class="score-deno">/100</span></div>
-      <div class="tier-label pass">관망</div>
-    </div>
-    <div class="chips">
-      <span class="chip disp20">20일 이격: +3.44%</span><span class="chip disp60">60일 이격: +4.78%</span><span class="chip rsi14">RSI: 71.3</span><span class="chip wd">비중편차: +3.11%</span>
-    </div>
-    <div class="contrib">점수 기여도: disp20 +13.5 · disp60 +3.4 · RSI +0.0 · 비중편차 +13.5</div>
-    <div class="change-line">
-  <span class="diff down">-8.11점 ▼</span>
-  <span class="delta">변화 기여: <strong>RSI -5.1</strong> / disp20 -1.9 / disp60 -0.6 / 비중편차 -0.4</span>
-  
-</div>
-    <div class="streak">신규 진입</div>
-  </div>
-</article>
-</div>
 
-<h2>오늘 신호 해설</h2>
-<div class="explain-grid">
-  <section class="explain" aria-label="ISA 해설">
-  <h3>ISA — ACE 미국30년국채액티브</h3>
-  <p><strong>점수 변화:</strong> 직전 분석 68.25점 → 오늘 66.72점 (-1.53 하락).</p>
-  <p>20일 이격 -2.58% — 평균과 비슷. 60일 이격 -3.89% — 평균 부근 약세. RSI(14) 26.9 — 과매도 영역. 비중편차 +0.94% — 거의 일치.</p>
-  <p>종합점수 66.72점은 매수 우선 검토 영역에 해당합니다.</p>
-</section>
-  <section class="explain" aria-label="연금저축 해설">
-  <h3>연금저축 — ACE 미국배당다우존스</h3>
-  <p><strong>점수 변화:</strong> 직전 분석 38.51점 → 오늘 30.40점 (-8.11 하락).</p>
-  <p>20일 이격 +3.44% — 평균 부근 강세. 60일 이격 +4.78% — 평균 부근 강세. RSI(14) 71.3 — 과매수 영역. 비중편차 +3.11% — 다소 부족.</p>
-  <p>종합점수 30.40점은 기준선(60점) 미만으로, 오늘은 관망이 합리적입니다.</p>
-</section>
-</div>
+  <h2>오늘의 신호</h2>
+  <div class="grid-2">
+    <article class="card" aria-label="ISA 신호 카드">
+      <div class="sig-acct">ISA</div>
+      <div class="sig-name">ACE 미국30년국채액티브</div>
+      <div class="sig-code">453850 · 정기</div>
+      <div class="score-row">
+        <span class="score-num">66.6</span><span class="score-deno">/100</span>
+        <span class="pill pill-buy" style="margin-left:10px">매수 우선 검토</span>
+      </div>
+      <div class="chips">
+        <span class="chip">20일 이격도 <b>-2.58%</b> · 정규화 58.6</span>
+        <span class="chip">60일 이격도 <b>-3.89%</b> · 정규화 63.0</span>
+        <span class="chip">RSI(14) <b>26.9</b> · 정규화 100.0</span>
+        <span class="chip">비중 편차 <b>+0.9%p</b> · 정규화 39.3</span>
+      </div>
+      <div class="contrib">
+        점수 기여도: 20일이격도 +20.5 · 60일이격도 +6.3 · <b>RSI +30.0</b> · 비중편차 +9.8 = 합계 66.6
+      </div>
+      <div class="change">점수 변화: 전일 대비 <span class="down">-0.1 ▼</span></div>
+      <div class="persist">신호 지속 2일째</div>
+    </article>
 
-<h2>포트폴리오 — ISA</h2>
-<div class="table-wrap">
-<table role="table">
-  <thead>
-    <tr>
+    <article class="card" aria-label="연금저축 신호 카드">
+      <div class="sig-acct">연금저축</div>
+      <div class="sig-name watch-big">관망</div>
+      <div class="watch-reason">
+        최상위 후보: ACE 미국배당다우존스 (402970) · 점수 <b>30.4</b> (60점 미만)<br>
+        매수 우선 종목 없음 — 60점 이상 진입 대기.
+      </div>
+      <div class="change" style="margin-top:14px">점수 변화: 전일 대비 <b>0.0</b></div>
+      <div class="persist">신호 지속 1일째 (신규 진입)</div>
+    </article>
+  </div>
+
+  <h2>오늘 신호 해설</h2>
+  <div class="grid-2">
+    <div class="card commentary">
+      <div class="lead">ISA — 전일 대비 -0.1점, 신호 2일째 유지</div>
+      <p>1순위 ACE 미국30년국채액티브(453850), 66.6점. 점수를 끌어올린 주된 동력은 RSI 26.9의 과매도 영역 진입이다.</p>
+      <ul>
+        <li>RSI(14) 26.9 — 과매도 영역. 단기 반등 여지가 가장 크다고 평가된 구간.</li>
+        <li>60일 이격도 -3.89% — 60일 평균 대비 부근 약세. 중기 흐름이 평균 아래에 있다.</li>
+        <li>20일 이격도 -2.58% — 20일 평균과 비슷한 범위. 단기적으로는 큰 이탈 아님.</li>
+        <li>비중 편차 +0.9%p — 목표비중과 거의 일치. 비중 보충 압력 낮음.</li>
+      </ul>
+    </div>
+    <div class="card commentary">
+      <div class="lead">연금저축 — 점수 변화 0.0, 1순위 30.4점에 머무름</div>
+      <p>최상위 ACE 미국배당다우존스(402970), 30.4점으로 관망 등급. RSI 71.3 과매수 영역이 점수를 끌어내린 주요 요인.</p>
+      <ul>
+        <li>RSI(14) 71.3 — 과매수 영역. 단기 조정 가능성이 점수에 반영됨.</li>
+        <li>60일 이격도 +4.78% — 부근 강세. 60일 평균 대비 다소 위.</li>
+        <li>20일 이격도 +3.44% — 부근 강세. 20일 평균 대비 다소 위.</li>
+        <li>비중 편차 +3.1%p — 다소 부족. 보충 우선순위가 점수에 +13.5 기여.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>포트폴리오 — ISA</h2>
+  <div class="tbl-sub">정기 매수 종목</div>
+  <div class="table-wrap">
+  <table role="table">
+    <thead><tr>
       <th scope="col">종목명</th><th scope="col">분류</th><th scope="col">기준종가</th>
       <th scope="col">보유수량</th><th scope="col">평가금액</th>
-      <th scope="col">목표비중</th><th scope="col">현재비중</th><th scope="col">편차</th>
+      <th scope="col">목표비중</th><th scope="col">현재비중</th><th scope="col">편차(pp)</th>
       <th scope="col">종합점수</th><th scope="col">비고</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="group-head"><td colspan="10">정기 종목</td></tr><tr class="row-buy">
-  <td class="name">ACE 미국30년국채액티브<div class="code-sm">453850</div></td>
-  <td>정기</td>
-  <td class="num">7,265</td>
-  <td class="num">253</td>
-  <td class="num">1,838,045</td>
-  <td class="num">13.6%</td>
-  <td class="num">12.66%</td>
-  <td class="num">+0.94%p</td>
-  <td class="num"><strong>66.72</strong></td>
-  <td></td>
-</tr><tr class="row-watch">
-  <td class="name">ACE KRX금현물<div class="code-sm">411060</div></td>
-  <td>정기</td>
-  <td class="num">30,300</td>
-  <td class="num">69</td>
-  <td class="num">2,090,700</td>
-  <td class="num">13.6%</td>
-  <td class="num">14.40%</td>
-  <td class="num">-0.80%p</td>
-  <td class="num"><strong>54.83</strong></td>
-  <td></td>
-</tr><tr class="row-pass">
-  <td class="name">ACE 미국WideMoat동일가중<div class="code-sm">309230</div></td>
-  <td>정기</td>
-  <td class="num">30,395</td>
-  <td class="num">114</td>
-  <td class="num">3,465,030</td>
-  <td class="num">22.7%</td>
-  <td class="num">23.86%</td>
-  <td class="num">-1.16%p</td>
-  <td class="num"><strong>38.03</strong></td>
-  <td></td>
-</tr><tr class="row-pass">
-  <td class="name">KODEX 미국배당커버드콜 액티브<div class="code-sm">441640</div></td>
-  <td>정기</td>
-  <td class="num">13,185</td>
-  <td class="num">270</td>
-  <td class="num">3,559,950</td>
-  <td class="num">27.3%</td>
-  <td class="num">24.52%</td>
-  <td class="num">+2.78%p</td>
-  <td class="num"><strong>36.80</strong></td>
-  <td></td>
-</tr><tr class="row-pass">
-  <td class="name">TIGER 미국테크TOP10 INDXX<div class="code-sm">381170</div></td>
-  <td>정기</td>
-  <td class="num">34,635</td>
-  <td class="num">103</td>
-  <td class="num">3,567,405</td>
-  <td class="num">22.7%</td>
-  <td class="num">24.57%</td>
-  <td class="num">-1.87%p</td>
-  <td class="num"><strong>17.20</strong></td>
-  <td></td>
-</tr><tr class="group-head"><td colspan="10">관찰 종목</td></tr><tr class="row-pass">
-  <td class="name">TIGER 코리아배당다우존스<div class="code-sm">0052D0</div></td>
-  <td>관찰</td>
-  <td class="num">16,085</td>
-  <td class="num">24</td>
-  <td class="num">386,040</td>
-  <td class="num">—</td>
-  <td class="num">—</td>
-  <td class="num">—</td>
-  <td class="num"><strong>N/A</strong></td>
-  <td></td>
-</tr>
-  </tbody>
-</table>
-</div>
-
-<h2>포트폴리오 — 연금저축</h2>
-<div class="table-wrap">
-<table role="table">
-  <thead>
-    <tr>
+    </tr></thead>
+    <tbody>
+      <tr><td>TIGER 미국테크TOP10 INDXX</td><td>정기</td><td>34,635</td><td>103</td><td>3,567,405</td><td>22.7%</td><td>24.6%</td><td>-1.9</td><td>17.1 <span class="pill pill-pass">관망</span></td><td></td></tr>
+      <tr><td>ACE 미국WideMoat동일가중</td><td>정기</td><td>30,395</td><td>114</td><td>3,465,030</td><td>22.7%</td><td>23.9%</td><td>-1.2</td><td>38.0 <span class="pill pill-pass">관망</span></td><td></td></tr>
+      <tr><td>KODEX 미국배당커버드콜 액티브</td><td>정기</td><td>13,185</td><td>270</td><td>3,559,950</td><td>27.3%</td><td>24.5%</td><td>+2.8</td><td>36.8 <span class="pill pill-pass">관망</span></td><td></td></tr>
+      <tr><td>ACE KRX금현물</td><td>정기</td><td>30,300</td><td>69</td><td>2,090,700</td><td>13.6%</td><td>14.4%</td><td>-0.8</td><td>54.8 <span class="pill pill-watch">관찰</span></td><td></td></tr>
+      <tr><td>ACE 미국30년국채액티브</td><td>정기</td><td>7,265</td><td>253</td><td>1,838,045</td><td>13.6%</td><td>12.7%</td><td>+0.9</td><td>66.6 <span class="pill pill-buy">매수 우선 검토</span></td><td>1순위 신호</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tbl-sub">관찰 종목</div>
+  <div class="table-wrap">
+  <table role="table">
+    <thead><tr>
       <th scope="col">종목명</th><th scope="col">분류</th><th scope="col">기준종가</th>
       <th scope="col">보유수량</th><th scope="col">평가금액</th>
-      <th scope="col">목표비중</th><th scope="col">현재비중</th><th scope="col">편차</th>
+      <th scope="col">목표비중</th><th scope="col">현재비중</th><th scope="col">편차(pp)</th>
       <th scope="col">종합점수</th><th scope="col">비고</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="group-head"><td colspan="10">정기 종목</td></tr><tr class="row-pass">
-  <td class="name">ACE 미국배당다우존스<div class="code-sm">402970</div></td>
-  <td>정기</td>
-  <td class="num">15,540</td>
-  <td class="num">184</td>
-  <td class="num">2,859,360</td>
-  <td class="num">50.0%</td>
-  <td class="num">46.89%</td>
-  <td class="num">+3.11%p</td>
-  <td class="num"><strong>30.40</strong></td>
-  <td></td>
-</tr><tr class="row-pass">
-  <td class="name">ACE 미국S&amp;P500<div class="code-sm">360200</div></td>
-  <td>정기</td>
-  <td class="num">27,915</td>
-  <td class="num">116</td>
-  <td class="num">3,238,140</td>
-  <td class="num">50.0%</td>
-  <td class="num">53.11%</td>
-  <td class="num">-3.11%p</td>
-  <td class="num"><strong>18.53</strong></td>
-  <td></td>
-</tr>
-  </tbody>
-</table>
+    </tr></thead>
+    <tbody>
+      <tr><td>TIGER 코리아배당다우존스</td><td>관찰</td><td>16,085</td><td>24</td><td>386,040</td><td>—</td><td>2.7%</td><td>—</td><td>—</td><td>관찰 종목 (점수·신호 제외)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>포트폴리오 — 연금저축</h2>
+  <div class="tbl-sub">정기 매수 종목</div>
+  <div class="table-wrap">
+  <table role="table">
+    <thead><tr>
+      <th scope="col">종목명</th><th scope="col">분류</th><th scope="col">기준종가</th>
+      <th scope="col">보유수량</th><th scope="col">평가금액</th>
+      <th scope="col">목표비중</th><th scope="col">현재비중</th><th scope="col">편차(pp)</th>
+      <th scope="col">종합점수</th><th scope="col">비고</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>ACE 미국S&amp;P500</td><td>정기</td><td>27,915</td><td>116</td><td>3,238,140</td><td>50.0%</td><td>53.1%</td><td>-3.1</td><td>18.5 <span class="pill pill-pass">관망</span></td><td></td></tr>
+      <tr><td>ACE 미국배당다우존스</td><td>정기</td><td>15,540</td><td>184</td><td>2,859,360</td><td>50.0%</td><td>46.9%</td><td>+3.1</td><td>30.4 <span class="pill pill-pass">관망</span></td><td>최상위 후보</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>정규화 지표 막대 — ISA</h2>
+  <div class="card">
+
+    <div class="bars-row">
+      <div class="bars-name">TIGER 미국테크TOP10 INDXX<span class="c">381170 · 종합 17.1</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:33.3%"></div></div>
+          <div class="bar-val"><span><b>+5.00%</b></span><span>정규화 33.3점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:3.2%"></div></div>
+          <div class="bar-val"><span><b>+14.05%</b></span><span>정규화 3.2점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+          <div class="bar-val"><span><b>80.0</b></span><span>정규화 0.0점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:20.7%"></div></div>
+          <div class="bar-val"><span><b>-1.9%p</b></span><span>정규화 20.7점</span></div></div>
+      </div>
+    </div>
+
+    <div class="bars-row">
+      <div class="bars-name">ACE 미국WideMoat동일가중<span class="c">309230 · 종합 38.0</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:47.1%"></div></div>
+          <div class="bar-val"><span><b>+0.88%</b></span><span>정규화 47.1점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:46.9%"></div></div>
+          <div class="bar-val"><span><b>+0.93%</b></span><span>정규화 46.9점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:35.0%"></div></div>
+          <div class="bar-val"><span><b>56.0</b></span><span>정규화 35.0점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:25.3%"></div></div>
+          <div class="bar-val"><span><b>-1.2%p</b></span><span>정규화 25.3점</span></div></div>
+      </div>
+    </div>
+
+    <div class="bars-row">
+      <div class="bars-name">KODEX 미국배당커버드콜 액티브<span class="c">441640 · 종합 36.8</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:44.3%"></div></div>
+          <div class="bar-val"><span><b>+1.71%</b></span><span>정규화 44.3점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:39.7%"></div></div>
+          <div class="bar-val"><span><b>+3.08%</b></span><span>정규화 39.7점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:14.5%"></div></div>
+          <div class="bar-val"><span><b>64.2</b></span><span>정규화 14.5점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:52.0%"></div></div>
+          <div class="bar-val"><span><b>+2.8%p</b></span><span>정규화 52.0점</span></div></div>
+      </div>
+    </div>
+
+    <div class="bars-row">
+      <div class="bars-name">ACE KRX금현물<span class="c">411060 · 종합 54.8</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:55.6%"></div></div>
+          <div class="bar-val"><span><b>-1.69%</b></span><span>정규화 55.6점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:66.2%"></div></div>
+          <div class="bar-val"><span><b>-4.87%</b></span><span>정규화 66.2점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:72.5%"></div></div>
+          <div class="bar-val"><span><b>41.0</b></span><span>정규화 72.5점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:28.0%"></div></div>
+          <div class="bar-val"><span><b>-0.8%p</b></span><span>정규화 28.0점</span></div></div>
+      </div>
+    </div>
+
+    <div class="bars-row">
+      <div class="bars-name">ACE 미국30년국채액티브<span class="c">453850 · 종합 66.6 (1순위)</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:58.6%"></div></div>
+          <div class="bar-val"><span><b>-2.58%</b></span><span>정규화 58.6점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:63.0%"></div></div>
+          <div class="bar-val"><span><b>-3.89%</b></span><span>정규화 63.0점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+          <div class="bar-val"><span><b>26.9</b></span><span>정규화 100.0점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:39.3%"></div></div>
+          <div class="bar-val"><span><b>+0.9%p</b></span><span>정규화 39.3점</span></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>정규화 지표 막대 — 연금저축</h2>
+  <div class="card">
+
+    <div class="bars-row">
+      <div class="bars-name">ACE 미국S&amp;P500<span class="c">360200 · 종합 18.5</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:38.0%"></div></div>
+          <div class="bar-val"><span><b>+3.60%</b></span><span>정규화 38.0점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:20.7%"></div></div>
+          <div class="bar-val"><span><b>+8.79%</b></span><span>정규화 20.7점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+          <div class="bar-val"><span><b>77.6</b></span><span>정규화 0.0점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:12.7%"></div></div>
+          <div class="bar-val"><span><b>-3.1%p</b></span><span>정규화 12.7점</span></div></div>
+      </div>
+    </div>
+
+    <div class="bars-row">
+      <div class="bars-name">ACE 미국배당다우존스<span class="c">402970 · 종합 30.4 (최상위 후보)</span></div>
+      <div class="bars-grid">
+        <div class="bar"><div class="bar-label">20일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:38.5%"></div></div>
+          <div class="bar-val"><span><b>+3.44%</b></span><span>정규화 38.5점</span></div></div>
+        <div class="bar"><div class="bar-label">60일 이격도</div>
+          <div class="bar-track"><div class="bar-fill" style="width:34.1%"></div></div>
+          <div class="bar-val"><span><b>+4.78%</b></span><span>정규화 34.1점</span></div></div>
+        <div class="bar"><div class="bar-label">RSI(14)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+          <div class="bar-val"><span><b>71.3</b></span><span>정규화 0.0점</span></div></div>
+        <div class="bar"><div class="bar-label">비중 편차</div>
+          <div class="bar-track"><div class="bar-fill" style="width:54.0%"></div></div>
+          <div class="bar-val"><span><b>+3.1%p</b></span><span>정규화 54.0점</span></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>종합 점수 계산</h2>
+  <p class="commentary">
+    종합점수는 4개 지표의 0~100 정규화 점수에 가중치를 곱해 합산한다.
+    가중치는 <b>20일 이격도 0.35 · 60일 이격도 0.10 · RSI(14) 0.30 · 비중 편차 0.25</b>.
+    어떤 지표가 N/A이면 해당 가중치를 나머지에 비례 재분배한다.
+  </p>
+  <div class="calc">
+    <div class="calc-card"><h4>20일 이격도</h4><p>-10%~+10% 구간을 100~0점으로 선형 매핑. 평균 아래일수록 높은 점수. 가중치 0.35.</p></div>
+    <div class="calc-card"><h4>60일 이격도</h4><p>-15%~+15% 구간을 100~0점으로 선형 매핑. 중기 흐름 반영. 가중치 0.10.</p></div>
+    <div class="calc-card"><h4>RSI(14)</h4><p>20~70 구간을 100~0점으로 선형 매핑. 30 이하 과매도시 만점. 가중치 0.30.</p></div>
+    <div class="calc-card"><h4>비중 편차</h4><p>-5%p~+5%p 구간을 0~100점으로 매핑. 목표비중보다 부족할수록 높은 점수. 가중치 0.25.</p></div>
+  </div>
+  <p class="commentary">
+    오늘 1순위 ACE 미국30년국채액티브 풀이:
+    <b>58.6×0.35 + 63.0×0.10 + 100.0×0.30 + 39.3×0.25 = 20.51 + 6.30 + 30.00 + 9.83 ≈ 66.6</b>
+  </p>
+  <div class="grade" role="group" aria-label="점수 등급">
+    <div class="grade-card grade-buy"><h4>매수 우선 검토 (≥60)</h4><p>적립 매수 우선순위 후보. 신호 지속일과 함께 판단.</p></div>
+    <div class="grade-card grade-watch"><h4>관찰 (40~59)</h4><p>점수가 더 오를 때까지 대기. 시장 흐름 모니터링.</p></div>
+    <div class="grade-card grade-pass"><h4>관망 (&lt;40)</h4><p>현 시점에서 매수 우선순위 낮음.</p></div>
+  </div>
+
+  <h2>지표 가이드</h2>
+  <details>
+    <summary>지표 설명 보기</summary>
+    <div class="guide">
+      <div class="guide-card"><h4>20일 이격도</h4>
+        <p>현재가가 20일 이동평균선 대비 얼마나 떨어져 있는지(%). 음수일수록 단기 평균 아래.
+        해석: ≤-10% 큰 폭 하락 / -5~-10% 하락 / -3~-5% 부근 약세 / -3~+3% 평균과 비슷 / +3~+5% 부근 강세 / +5~+10% 상승 / ≥+10% 큰 폭 상승.</p></div>
+      <div class="guide-card"><h4>60일 이격도</h4>
+        <p>현재가의 60일 이동평균 대비 위치(%). 중기 추세의 척도.
+        해석 기준은 20일 이격도와 동일.</p></div>
+      <div class="guide-card"><h4>RSI(14)</h4>
+        <p>14일 기준 상대강도지수.
+        ≥70 과매수 영역 / 65~70 과매수 근접 / 50~65 강세 모멘텀 / ≈50 중립 / 35~50 약세 모멘텀 / 30~35 과매도 근접 / ≤30 과매도 영역.</p></div>
+      <div class="guide-card"><h4>비중 편차</h4>
+        <p>목표비중과 현재비중의 차이(%p, 목표−현재).
+        ≥+5%p 크게 부족(보충 우선) / +2~+5%p 다소 부족 / -2~+2%p 거의 일치 / -5~-2%p 다소 초과 / ≤-5%p 크게 초과.</p></div>
+    </div>
+  </details>
+
+  <footer>본 신호는 기술적 지표 기반 정보이며 수익을 보장하지 않습니다. 실제 매수는 본인 판단입니다.</footer>
+
 </div>
-
-<h2>정규화 지표 막대 — ISA (정기)</h2>
-<div class="bars-grid"><div class="bar-group">
-  <h4>TIGER 미국테크TOP10 INDXX <span class="code-sm">381170</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill pass" style="width:33.3%"></div><span class="bar-val">33.3</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill pass" style="width:3.2%"></div><span class="bar-val">3.2</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill pass" style="width:0.0%"></div><span class="bar-val">0.0</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill pass" style="width:20.9%"></div><span class="bar-val">20.9</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill pass" style="width:17.2%"></div><span class="bar-val"><strong>17.20</strong></span></div></div>
-</div><div class="bar-group">
-  <h4>ACE 미국WideMoat동일가중 <span class="code-sm">309230</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill watch" style="width:47.1%"></div><span class="bar-val">47.1</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill watch" style="width:46.9%"></div><span class="bar-val">46.9</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill pass" style="width:34.9%"></div><span class="bar-val">34.9</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill pass" style="width:25.6%"></div><span class="bar-val">25.6</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill pass" style="width:38.0%"></div><span class="bar-val"><strong>38.03</strong></span></div></div>
-</div><div class="bar-group">
-  <h4>KODEX 미국배당커버드콜 액티브 <span class="code-sm">441640</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill watch" style="width:44.3%"></div><span class="bar-val">44.3</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill pass" style="width:39.7%"></div><span class="bar-val">39.7</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill pass" style="width:14.5%"></div><span class="bar-val">14.5</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill watch" style="width:51.9%"></div><span class="bar-val">51.9</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill pass" style="width:36.8%"></div><span class="bar-val"><strong>36.80</strong></span></div></div>
-</div><div class="bar-group">
-  <h4>ACE KRX금현물 <span class="code-sm">411060</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill watch" style="width:55.6%"></div><span class="bar-val">55.6</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill buy" style="width:66.2%"></div><span class="bar-val">66.2</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill buy" style="width:72.4%"></div><span class="bar-val">72.4</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill pass" style="width:28.0%"></div><span class="bar-val">28.0</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill watch" style="width:54.8%"></div><span class="bar-val"><strong>54.83</strong></span></div></div>
-</div><div class="bar-group">
-  <h4>ACE 미국30년국채액티브 <span class="code-sm">453850</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill watch" style="width:58.6%"></div><span class="bar-val">58.6</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill buy" style="width:63.0%"></div><span class="bar-val">63.0</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill buy" style="width:100.0%"></div><span class="bar-val">100.0</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill pass" style="width:39.6%"></div><span class="bar-val">39.6</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill buy" style="width:66.7%"></div><span class="bar-val"><strong>66.72</strong></span></div></div>
-</div></div>
-
-<h2>정규화 지표 막대 — 연금저축 (정기)</h2>
-<div class="bars-grid"><div class="bar-group">
-  <h4>ACE 미국S&amp;P500 <span class="code-sm">360200</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill pass" style="width:38.0%"></div><span class="bar-val">38.0</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill pass" style="width:20.7%"></div><span class="bar-val">20.7</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill pass" style="width:0.0%"></div><span class="bar-val">0.0</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill pass" style="width:12.6%"></div><span class="bar-val">12.6</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill pass" style="width:18.5%"></div><span class="bar-val"><strong>18.53</strong></span></div></div>
-</div><div class="bar-group">
-  <h4>ACE 미국배당다우존스 <span class="code-sm">402970</span></h4>
-  <div class="bar-row"><span class="bar-lab">disp20</span>
-<div class="bar"><div class="bar-fill pass" style="width:38.5%"></div><span class="bar-val">38.5</span></div></div><div class="bar-row"><span class="bar-lab">disp60</span>
-<div class="bar"><div class="bar-fill pass" style="width:34.1%"></div><span class="bar-val">34.1</span></div></div><div class="bar-row"><span class="bar-lab">RSI</span>
-<div class="bar"><div class="bar-fill pass" style="width:0.0%"></div><span class="bar-val">0.0</span></div></div><div class="bar-row"><span class="bar-lab">비중편차</span>
-<div class="bar"><div class="bar-fill watch" style="width:54.0%"></div><span class="bar-val">54.0</span></div></div><div class="bar-row total"><span class="bar-lab">종합</span>
-<div class="bar"><div class="bar-fill pass" style="width:30.4%"></div><span class="bar-val"><strong>30.40</strong></span></div></div>
-</div></div>
-
-<h2>종합 점수 계산</h2>
-<section class="calc-explain">
-  
-<p>각 정기 종목은 네 개 지표를 0~100점으로 정규화한 뒤, 정해진 가중치로 가중평균하여 종합점수를 산출합니다.</p>
-<table class="weight-tbl">
-  <tr><td>20일 이격</td><td>−15% → 100점, +15% → 0점 (선형보간)</td><td><strong>가중치 0.35</strong></td></tr>
-  <tr><td>60일 이격</td><td>−15% → 100점, +15% → 0점</td><td><strong>가중치 0.10</strong></td></tr>
-  <tr><td>RSI(14)</td><td>30 → 100점, 70 → 0점</td><td><strong>가중치 0.30</strong></td></tr>
-  <tr><td>비중편차</td><td>+10%p → 100점, −5%p → 0점</td><td><strong>가중치 0.25</strong></td></tr>
-</table>
-<p>지표가 N/A인 경우 해당 가중치는 0으로 처리하고 나머지 지표 가중치를 비례 재분배합니다(합=1). 보유수량이 0인 정기 종목은 비중편차를 50점(중립)으로 고정합니다.</p>
-<p><strong>예시</strong> — disp20 −5% → 정규화 (15−(−5))/30×100 ≈ 66.7점, 가중 기여 66.7×0.35 = 23.3점.</p>
-<div class="calc-grid" role="group" aria-label="점수 기준">
-  <div class="calc-card buy">≥60 매수 우선 검토 (오늘의 신호)</div>
-  <div class="calc-card watch">40~59 관찰</div>
-  <div class="calc-card pass">&lt;40 관망</div>
-</div>
-
-</section>
-
-<h2>지표 가이드</h2>
-<details class="guide"><summary>지표 설명 보기</summary>
-
-<div class="guide-body">
-<p><strong>RSI(14)</strong> — 14일 상대강도지수. 매수/매도 압력의 균형을 0~100 척도로 표시.</p>
-<ul>
-  <li>≥70 과매수 영역 / 65~70 과매수 근접 / 50~65 강세 모멘텀 / ≈50 중립 / 35~50 약세 모멘텀 / 30~35 과매도 근접 / ≤30 과매도 영역</li>
-</ul>
-<p><strong>이격도(20일/60일)</strong> — 종가가 이동평균선에서 얼마나 벗어났는지의 백분율. 음수면 평균 아래, 양수면 평균 위.</p>
-<ul>
-  <li>≤-10% 평균 대비 큰 폭 하락 / -5~-10% 평균 대비 하락 / -3~-5% 평균 부근 약세 / -3~+3% 평균과 비슷 / +3~+5% 평균 부근 강세 / +5~+10% 평균 대비 상승 / ≥+10% 평균 대비 큰 폭 상승</li>
-</ul>
-<p><strong>비중편차</strong> — 목표비중 − 현재비중. 양수면 목표 대비 부족, 음수면 목표 대비 초과 보유.</p>
-<ul>
-  <li>≥+5%p 목표 대비 크게 부족 / +2~+5%p 다소 부족 / -2~+2%p 거의 일치 / -5~-2%p 다소 초과 / ≤-5%p 크게 초과</li>
-</ul>
-</div>
-
-</details>
-
-<footer class="footer">
-본 신호는 기술적 지표 기반 정보이며 수익을 보장하지 않습니다. 실제 매수는 본인 판단입니다.
-</footer>
-
-</div></body></html>
+</body>
+</html>
