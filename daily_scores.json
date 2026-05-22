@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-05-21",
-  "generated_at": "2026-05-22 09:49:40 KST",
+  "generated_at": "2026-05-22 11:17:28 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -609,7 +609,18 @@
           "is_outlier": false,
           "outlier_reason": null,
           "current_weight": 2.7,
-          "total_score": null,
+          "norm_disp20": 51.6,
+          "norm_disp60": 44.7,
+          "norm_rsi14": 46.8,
+          "norm_weight_dev": null,
+          "total_score": 48.8,
+          "score_basis": "비중제외",
+          "contributions": {
+            "disp20": 24.1,
+            "disp60": 6.0,
+            "rsi14": 18.7,
+            "weight_dev": null
+          },
           "dca_tier": null,
           "score_history": [
             {
