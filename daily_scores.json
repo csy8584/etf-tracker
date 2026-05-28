@@ -4,7 +4,7 @@
   "score_model_desc": "rsi_level(0.22)+rsi_momentum(0.08)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-05-27",
-  "generated_at": "2026-05-28 11:06:42 KST",
+  "generated_at": "2026-05-28 15:58:46 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -56,47 +56,47 @@
             },
             {
               "date": "04/28",
-              "score": 24.1
+              "score": 24.9
             },
             {
               "date": "04/29",
-              "score": 24.0
+              "score": 24.6
             },
             {
               "date": "04/30",
-              "score": 24.3
+              "score": 23.9
             },
             {
               "date": "05/04",
-              "score": 24.8
+              "score": 23.5
             },
             {
               "date": "05/06",
-              "score": 24.5
+              "score": 23.7
             },
             {
               "date": "05/07",
-              "score": 28.0
+              "score": 29.0
             },
             {
               "date": "05/08",
-              "score": 24.7
+              "score": 26.5
             },
             {
               "date": "05/11",
-              "score": 22.9
+              "score": 23.4
             },
             {
               "date": "05/12",
-              "score": 23.0
+              "score": 23.8
             },
             {
               "date": "05/13",
-              "score": 22.9
+              "score": 23.8
             },
             {
               "date": "05/14",
-              "score": 20.9
+              "score": 23.1
             },
             {
               "date": "05/15",
@@ -108,23 +108,23 @@
             },
             {
               "date": "05/19",
-              "score": 22.6
+              "score": 23.4
             },
             {
               "date": "05/20",
-              "score": 20.9
+              "score": 19.9
             },
             {
               "date": "05/21",
-              "score": 24.5
+              "score": 25.7
             },
             {
               "date": "05/22",
-              "score": 23.9
+              "score": 25.7
             },
             {
               "date": "05/26",
-              "score": 21.4
+              "score": 21.0
             },
             {
               "date": "05/27",
@@ -178,27 +178,27 @@
             },
             {
               "date": "04/28",
-              "score": 41.6
+              "score": 40.5
             },
             {
               "date": "04/29",
-              "score": 43.2
+              "score": 41.1
             },
             {
               "date": "04/30",
-              "score": 45.1
+              "score": 45.2
             },
             {
               "date": "05/04",
-              "score": 46.1
+              "score": 44.4
             },
             {
               "date": "05/06",
-              "score": 49.5
+              "score": 47.9
             },
             {
               "date": "05/07",
-              "score": 51.5
+              "score": 53.1
             },
             {
               "date": "05/08",
@@ -206,23 +206,23 @@
             },
             {
               "date": "05/11",
-              "score": 39.1
+              "score": 37.7
             },
             {
               "date": "05/12",
-              "score": 41.4
+              "score": 39.7
             },
             {
               "date": "05/13",
-              "score": 43.2
+              "score": 45.3
             },
             {
               "date": "05/14",
-              "score": 42.1
+              "score": 40.0
             },
             {
               "date": "05/15",
-              "score": 42.8
+              "score": 45.0
             },
             {
               "date": "05/18",
@@ -234,19 +234,19 @@
             },
             {
               "date": "05/20",
-              "score": 38.4
+              "score": 37.7
             },
             {
               "date": "05/21",
-              "score": 37.3
+              "score": 38.4
             },
             {
               "date": "05/22",
-              "score": 32.6
+              "score": 33.7
             },
             {
               "date": "05/26",
-              "score": 29.0
+              "score": 30.2
             },
             {
               "date": "05/27",
@@ -277,15 +277,15 @@
           "norm_disp20": 42.2,
           "norm_disp60": 36.7,
           "norm_rsi_level": 7.7,
-          "norm_rsi_momentum": 4.3,
+          "norm_rsi_momentum": 0.0,
           "norm_rsi14": 7.7,
           "norm_weight_dev": 54.0,
-          "total_score": 34.0,
+          "total_score": 33.6,
           "contributions": {
             "disp20": 14.8,
             "disp60": 3.7,
             "rsi_level": 1.7,
-            "rsi_momentum": 0.3,
+            "rsi_momentum": 0.0,
             "weight_dev": 13.5
           },
           "dca_tier": {
@@ -300,39 +300,39 @@
             },
             {
               "date": "04/28",
-              "score": 48.1
+              "score": 46.7
             },
             {
               "date": "04/29",
-              "score": 50.0
+              "score": 51.6
             },
             {
               "date": "04/30",
-              "score": 48.4
+              "score": 47.3
             },
             {
               "date": "05/04",
-              "score": 50.7
+              "score": 52.5
             },
             {
               "date": "05/06",
-              "score": 48.7
+              "score": 47.7
             },
             {
               "date": "05/07",
-              "score": 50.0
+              "score": 49.0
             },
             {
               "date": "05/08",
-              "score": 50.2
+              "score": 50.3
             },
             {
               "date": "05/11",
-              "score": 46.4
+              "score": 45.6
             },
             {
               "date": "05/12",
-              "score": 46.0
+              "score": 46.8
             },
             {
               "date": "05/13",
@@ -344,7 +344,7 @@
             },
             {
               "date": "05/15",
-              "score": 42.7
+              "score": 44.6
             },
             {
               "date": "05/18",
@@ -352,27 +352,27 @@
             },
             {
               "date": "05/19",
-              "score": 44.2
+              "score": 44.5
             },
             {
               "date": "05/20",
-              "score": 40.5
+              "score": 40.2
             },
             {
               "date": "05/21",
-              "score": 40.3
+              "score": 42.3
             },
             {
               "date": "05/22",
-              "score": 38.3
+              "score": 38.8
             },
             {
               "date": "05/26",
-              "score": 35.2
+              "score": 35.7
             },
             {
               "date": "05/27",
-              "score": 33.9
+              "score": 33.6
             }
           ]
         },
@@ -399,15 +399,15 @@
           "norm_disp20": 58.8,
           "norm_disp60": 70.0,
           "norm_rsi_level": 83.0,
-          "norm_rsi_momentum": 15.0,
+          "norm_rsi_momentum": 0.0,
           "norm_rsi14": 83.0,
           "norm_weight_dev": 25.3,
-          "total_score": 53.4,
+          "total_score": 52.2,
           "contributions": {
             "disp20": 20.6,
             "disp60": 7.0,
             "rsi_level": 18.3,
-            "rsi_momentum": 1.2,
+            "rsi_momentum": 0.0,
             "weight_dev": 6.3
           },
           "dca_tier": {
@@ -422,23 +422,23 @@
             },
             {
               "date": "04/28",
-              "score": 53.6
+              "score": 51.8
             },
             {
               "date": "04/29",
-              "score": 56.9
+              "score": 55.1
             },
             {
               "date": "04/30",
-              "score": 57.3
+              "score": 58.9
             },
             {
               "date": "05/04",
-              "score": 56.2
+              "score": 55.6
             },
             {
               "date": "05/06",
-              "score": 57.0
+              "score": 56.0
             },
             {
               "date": "05/07",
@@ -446,55 +446,55 @@
             },
             {
               "date": "05/08",
-              "score": 46.1
+              "score": 47.9
             },
             {
               "date": "05/11",
-              "score": 46.5
+              "score": 45.8
             },
             {
               "date": "05/12",
-              "score": 47.5
+              "score": 48.5
             },
             {
               "date": "05/13",
-              "score": 43.6
+              "score": 45.2
             },
             {
               "date": "05/14",
-              "score": 43.2
+              "score": 41.6
             },
             {
               "date": "05/15",
-              "score": 47.0
+              "score": 46.4
             },
             {
               "date": "05/18",
-              "score": 50.9
+              "score": 49.4
             },
             {
               "date": "05/19",
-              "score": 51.8
+              "score": 51.9
             },
             {
               "date": "05/20",
-              "score": 53.6
+              "score": 51.9
             },
             {
               "date": "05/21",
-              "score": 54.2
+              "score": 55.8
             },
             {
               "date": "05/22",
-              "score": 50.9
+              "score": 52.6
             },
             {
               "date": "05/26",
-              "score": 50.3
+              "score": 48.9
             },
             {
               "date": "05/27",
-              "score": 53.5
+              "score": 52.2
             }
           ]
         },
@@ -521,15 +521,15 @@
           "norm_disp20": 49.3,
           "norm_disp60": 54.6,
           "norm_rsi_level": 50.3,
-          "norm_rsi_momentum": 65.0,
+          "norm_rsi_momentum": 85.0,
           "norm_rsi14": 50.3,
           "norm_weight_dev": 40.0,
-          "total_score": 49.0,
+          "total_score": 50.6,
           "contributions": {
             "disp20": 17.3,
             "disp60": 5.5,
             "rsi_level": 11.1,
-            "rsi_momentum": 5.2,
+            "rsi_momentum": 6.8,
             "weight_dev": 10.0
           },
           "dca_tier": {
@@ -544,55 +544,55 @@
             },
             {
               "date": "04/28",
-              "score": 48.6
+              "score": 47.4
             },
             {
               "date": "04/29",
-              "score": 50.0
+              "score": 48.0
             },
             {
               "date": "04/30",
-              "score": 52.8
+              "score": 52.4
             },
             {
               "date": "05/04",
-              "score": 56.0
+              "score": 57.5
             },
             {
               "date": "05/06",
-              "score": 54.3
+              "score": 56.3
             },
             {
               "date": "05/07",
-              "score": 52.1
+              "score": 53.3
             },
             {
               "date": "05/08",
-              "score": 50.1
+              "score": 48.2
             },
             {
               "date": "05/11",
-              "score": 52.3
+              "score": 51.2
             },
             {
               "date": "05/12",
-              "score": 53.7
+              "score": 51.6
             },
             {
               "date": "05/13",
-              "score": 55.6
+              "score": 54.9
             },
             {
               "date": "05/14",
-              "score": 56.5
+              "score": 54.7
             },
             {
               "date": "05/15",
-              "score": 58.8
+              "score": 57.6
             },
             {
               "date": "05/18",
-              "score": 60.8
+              "score": 59.2
             },
             {
               "date": "05/19",
@@ -600,7 +600,7 @@
             },
             {
               "date": "05/20",
-              "score": 62.4
+              "score": 61.0
             },
             {
               "date": "05/21",
@@ -608,7 +608,7 @@
             },
             {
               "date": "05/22",
-              "score": 59.2
+              "score": 60.0
             },
             {
               "date": "05/26",
@@ -616,7 +616,7 @@
             },
             {
               "date": "05/27",
-              "score": 48.9
+              "score": 50.6
             }
           ]
         },
@@ -642,15 +642,15 @@
           "norm_disp20": 56.0,
           "norm_disp60": 48.3,
           "norm_rsi_level": 57.2,
-          "norm_rsi_momentum": 12.9,
+          "norm_rsi_momentum": 0.0,
           "norm_rsi14": 57.2,
-          "total_score": 50.7,
+          "total_score": 49.4,
           "score_basis": "비중제외",
           "contributions": {
             "disp20": 26.1,
             "disp60": 6.4,
             "rsi_level": 16.8,
-            "rsi_momentum": 1.4,
+            "rsi_momentum": 0.0,
             "weight_dev": null
           },
           "dca_tier": null,
@@ -661,35 +661,35 @@
             },
             {
               "date": "04/28",
-              "score": 38.6
+              "score": 40.8
             },
             {
               "date": "04/29",
-              "score": 36.7
-            },
-            {
-              "date": "04/30",
-              "score": 38.1
-            },
-            {
-              "date": "05/04",
-              "score": 39.1
-            },
-            {
-              "date": "05/06",
-              "score": 37.2
-            },
-            {
-              "date": "05/07",
-              "score": 38.0
-            },
-            {
-              "date": "05/08",
               "score": 37.7
             },
             {
+              "date": "04/30",
+              "score": 35.4
+            },
+            {
+              "date": "05/04",
+              "score": 41.7
+            },
+            {
+              "date": "05/06",
+              "score": 36.7
+            },
+            {
+              "date": "05/07",
+              "score": 38.4
+            },
+            {
+              "date": "05/08",
+              "score": 38.3
+            },
+            {
               "date": "05/11",
-              "score": 38.6
+              "score": 36.2
             },
             {
               "date": "05/12",
@@ -697,7 +697,7 @@
             },
             {
               "date": "05/13",
-              "score": 49.6
+              "score": 47.1
             },
             {
               "date": "05/14",
@@ -713,11 +713,11 @@
             },
             {
               "date": "05/19",
-              "score": 55.1
+              "score": 54.9
             },
             {
               "date": "05/20",
-              "score": 63.4
+              "score": 62.1
             },
             {
               "date": "05/21",
@@ -725,15 +725,15 @@
             },
             {
               "date": "05/22",
-              "score": 45.7
+              "score": 47.4
             },
             {
               "date": "05/26",
-              "score": 44.4
+              "score": 42.0
             },
             {
               "date": "05/27",
-              "score": 50.8
+              "score": 49.4
             }
           ]
         }
@@ -742,7 +742,7 @@
         "status": "WATCH",
         "top_code": "411060",
         "top_name": "ACE KRX금현물",
-        "top_score": 53.4
+        "top_score": 52.2
       },
       "history_context": {
         "has_prev": false,
@@ -758,13 +758,13 @@
             "name": "ACE KRX금현물",
             "code": "411060",
             "label": "적립 +",
-            "score": 53.4
+            "score": 52.2
           },
           {
             "name": "ACE 미국30년국채액티브",
             "code": "453850",
             "label": "적립 +",
-            "score": 49.0
+            "score": 50.6
           }
         ]
       }
@@ -796,15 +796,15 @@
           "norm_disp20": 38.8,
           "norm_disp60": 19.4,
           "norm_rsi_level": 0.0,
-          "norm_rsi_momentum": 33.6,
+          "norm_rsi_momentum": 11.7,
           "norm_rsi14": 0.0,
           "norm_weight_dev": 13.3,
-          "total_score": 21.5,
+          "total_score": 19.8,
           "contributions": {
             "disp20": 13.6,
             "disp60": 1.9,
             "rsi_level": 0.0,
-            "rsi_momentum": 2.7,
+            "rsi_momentum": 0.9,
             "weight_dev": 3.3
           },
           "dca_tier": {
@@ -819,51 +819,51 @@
             },
             {
               "date": "04/28",
-              "score": 24.7
+              "score": 25.2
             },
             {
               "date": "04/29",
-              "score": 24.3
+              "score": 22.9
             },
             {
               "date": "04/30",
-              "score": 24.6
+              "score": 22.4
             },
             {
               "date": "05/04",
-              "score": 27.2
+              "score": 28.8
             },
             {
               "date": "05/06",
-              "score": 26.1
+              "score": 26.3
             },
             {
               "date": "05/07",
-              "score": 26.7
+              "score": 28.3
             },
             {
               "date": "05/08",
-              "score": 24.9
+              "score": 26.9
             },
             {
               "date": "05/11",
-              "score": 23.2
+              "score": 24.3
             },
             {
               "date": "05/12",
-              "score": 22.7
+              "score": 24.4
             },
             {
               "date": "05/13",
-              "score": 21.7
+              "score": 22.4
             },
             {
               "date": "05/14",
-              "score": 21.1
+              "score": 22.0
             },
             {
               "date": "05/15",
-              "score": 20.7
+              "score": 21.3
             },
             {
               "date": "05/18",
@@ -871,27 +871,27 @@
             },
             {
               "date": "05/19",
-              "score": 24.1
+              "score": 26.2
             },
             {
               "date": "05/20",
-              "score": 21.7
+              "score": 19.9
             },
             {
               "date": "05/21",
-              "score": 24.1
+              "score": 26.3
             },
             {
               "date": "05/22",
-              "score": 23.0
+              "score": 25.2
             },
             {
               "date": "05/26",
-              "score": 21.9
+              "score": 21.2
             },
             {
               "date": "05/27",
-              "score": 21.6
+              "score": 19.8
             }
           ]
         },
@@ -941,55 +941,55 @@
             },
             {
               "date": "04/28",
-              "score": 47.9
+              "score": 47.7
             },
             {
               "date": "04/29",
-              "score": 46.5
+              "score": 47.3
             },
             {
               "date": "04/30",
-              "score": 42.9
+              "score": 44.1
             },
             {
               "date": "05/04",
-              "score": 41.8
+              "score": 43.1
             },
             {
               "date": "05/06",
-              "score": 42.2
+              "score": 41.9
             },
             {
               "date": "05/07",
-              "score": 47.1
+              "score": 45.1
             },
             {
               "date": "05/08",
-              "score": 48.5
+              "score": 50.1
             },
             {
               "date": "05/11",
-              "score": 46.1
+              "score": 46.9
             },
             {
               "date": "05/12",
-              "score": 44.0
+              "score": 44.2
             },
             {
               "date": "05/13",
-              "score": 39.8
+              "score": 41.5
             },
             {
               "date": "05/14",
-              "score": 38.9
+              "score": 39.2
             },
             {
               "date": "05/15",
-              "score": 38.0
+              "score": 40.2
             },
             {
               "date": "05/18",
-              "score": 37.2
+              "score": 37.1
             },
             {
               "date": "05/19",
@@ -997,19 +997,19 @@
             },
             {
               "date": "05/20",
-              "score": 34.6
+              "score": 35.9
             },
             {
               "date": "05/21",
-              "score": 33.4
+              "score": 31.2
             },
             {
               "date": "05/22",
-              "score": 36.0
+              "score": 37.1
             },
             {
               "date": "05/26",
-              "score": 33.0
+              "score": 35.0
             },
             {
               "date": "05/27",
