@@ -100,6 +100,32 @@ tr:hover td { background: #fafbfd; }
 .ind-value { font-size: 12px; text-align: right; white-space: nowrap; }
 .ind-value .raw { font-weight: 700; color: var(--ink); }
 .ind-value .norm { color: var(--ink-3); }
+/* ─ 종목 카드 펼침/접기 (점수 구성 + 해설) ─ */
+.stock-detail { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 0; }
+.stock-detail summary { cursor: pointer; font-size: 12px; font-weight: 600; color: var(--brand);
+  padding: 10px 0 2px; list-style: none; user-select: none; }
+.stock-detail summary::-webkit-details-marker { display: none; }
+.stock-detail summary::before { content: '▸ '; font-size: 10px; }
+.stock-detail[open] summary::before { content: '▾ '; }
+.stock-detail summary:hover { opacity: .8; }
+.detail-body { padding: 12px 2px 4px; }
+.score-build { margin-bottom: 14px; }
+.score-build-title { font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase;
+  letter-spacing: .04em; margin-bottom: 8px; }
+.contrib-row { display: grid; grid-template-columns: 92px 1fr 52px; align-items: center; gap: 10px; margin-bottom: 6px; }
+.contrib-name { font-size: 12px; color: var(--ink-2); }
+.contrib-bar-outer { height: 8px; background: var(--line); border-radius: var(--radius-pill); overflow: hidden; }
+.contrib-bar-inner { height: 100%; background: var(--brand); border-radius: var(--radius-pill); opacity: .75; }
+.contrib-val { font-size: 12px; font-weight: 700; color: var(--ink); text-align: right; }
+.contrib-total { display: flex; justify-content: space-between; align-items: baseline;
+  border-top: 1px dashed var(--line); margin-top: 8px; padding-top: 8px; }
+.contrib-total .lbl { font-size: 12px; font-weight: 600; color: var(--ink-2); }
+.contrib-total .val { font-size: 18px; font-weight: 800; color: var(--brand); }
+.commentary { background: var(--bg-subtle, rgba(0,0,0,.02)); border-radius: var(--radius-sm); padding: 14px 16px; }
+.commentary-title { font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase;
+  letter-spacing: .04em; margin-bottom: 8px; }
+.commentary p { font-size: 13px; line-height: 1.7; color: var(--ink-2); margin: 0 0 6px; }
+.commentary p:last-child { margin-bottom: 0; }
 /* ─ 점수 설명 (REF 클래스: explain-grid/explain-card/ec-label/ec-weight) ─ */
 .explain-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 16px; }
 .explain-card { background: var(--bg-card); border-radius: var(--radius-sm); border: 1px solid var(--line); padding: 14px; font-size: 12px; color: var(--ink-2); line-height: 1.6; }
@@ -155,9 +181,9 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
   <div class="eyebrow">ETF Tracker · 일일 신호 리포트</div>
   <h1>오늘의 ETF 적립 신호</h1>
   <p class="meta">
-    분석일(KST): 2026-05-29 10:40 KST &nbsp;·&nbsp;
+    분석일(KST): 2026-05-29 11:42 KST &nbsp;·&nbsp;
     데이터 기준일: 2026-05-28 &nbsp;·&nbsp;
-    생성: 2026-05-29 10:40:03 KST &nbsp;·&nbsp;
+    생성: 2026-05-29 11:42:33 KST &nbsp;·&nbsp;
     <span style="color:var(--ink-4);font-size:12px">Engine: update_prices.py v4</span>
   </p>
   <div class="market-state " title="시장 중립~강세 (평균 RSI 59.6, 20일 이격 +1.21%)">시장 중립~강세 (평균 RSI 59.6, 20일 이격 +1.21%)</div>
@@ -758,6 +784,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:25.3%" aria-label="정규화 25.3점"></div></div>
 <div class="ind-value"><span class="raw">-1.2%p</span> <span class="norm">· 정규화 25.3점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+15.2</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:8%"></div></div><div class="contrib-val">+1.2</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:12%"></div></div><div class="contrib-val">+1.8</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:32%"></div></div><div class="contrib-val">+4.8</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:41%"></div></div><div class="contrib-val">+6.3</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">29.4점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 66.7로 강세 모멘텀이 유지되고 있으나 눌림은 부족한 상태입니다.</p><p>RSI가 +1.80 상승하며 추세 회복 흐름을 보여, 모멘텀이 0.35배로 반영됐습니다.</p><p>20일 이동평균 대비 +1.99%로 평균선 부근에 위치합니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 29.4점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">ACE 미국WideMoat동일가중<span class="stock-bar-meta">309230 · 정기</span></div>
@@ -786,6 +822,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:20.0%" aria-label="정규화 20.0점"></div></div>
 <div class="ind-value"><span class="raw">-2.0%p</span> <span class="norm">· 정규화 20.0점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+15.2</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:28%"></div></div><div class="contrib-val">+4.2</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:38%"></div></div><div class="contrib-val">+5.8</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:26%"></div></div><div class="contrib-val">+4.0</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:33%"></div></div><div class="contrib-val">+5.0</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">34.1점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 59.5로 강세 모멘텀이 유지되고 있으나 눌림은 부족한 상태입니다.</p><p>RSI 방향은 +0.00로 큰 변화가 없어 방향성 가점·감점이 거의 없습니다.</p><p>20일 이동평균 대비 +1.98%로 평균선 부근에 위치합니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 34.1점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">KODEX 미국배당커버드콜 액티브<span class="stock-bar-meta">441640 · 정기</span></div>
@@ -814,6 +860,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:53.3%" aria-label="정규화 53.3점"></div></div>
 <div class="ind-value"><span class="raw">+3.0%p</span> <span class="norm">· 정규화 53.3점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+14.9</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:25%"></div></div><div class="contrib-val">+3.7</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:11%"></div></div><div class="contrib-val">+1.7</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:27%"></div></div><div class="contrib-val">+4.0</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:89%"></div></div><div class="contrib-val">+13.3</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">37.7점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 67.0로 강세 모멘텀이 유지되고 있으나 눌림은 부족한 상태입니다.</p><p>RSI 방향은 +0.10로 큰 변화가 없어 방향성 가점·감점이 거의 없습니다.</p><p>20일 이동평균 대비 +2.20%로 평균선 부근에 위치합니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 37.7점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">ACE KRX금현물<span class="stock-bar-meta">411060 · 정기</span></div>
@@ -842,6 +898,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:26.7%" aria-label="정규화 26.7점"></div></div>
 <div class="ind-value"><span class="raw">-1.0%p</span> <span class="norm">· 정규화 26.7점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+21.7</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:34%"></div></div><div class="contrib-val">+7.3</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:92%"></div></div><div class="contrib-val">+20.0</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:1%"></div></div><div class="contrib-val">+0.3</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:31%"></div></div><div class="contrib-val">+6.7</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">56.0점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 33.6로 과매도에 근접해 매수 압력이 형성되는 눌림 구간입니다.</p><p>다만 전일 대비 RSI가 -3.20 하락 중이라 아직 바닥이 확인되지 않았으며, 하락 모멘텀이 0.94배로 감점 요인으로 작용했습니다.</p><p>20일 이동평균 대비 -3.60%로 가격이 평균선 아래에 있어 매수 매력이 있습니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 56.0점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">ACE 미국30년국채액티브<span class="stock-bar-meta">453850 · 정기</span></div>
@@ -870,6 +936,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:40.7%" aria-label="정규화 40.7점"></div></div>
 <div class="ind-value"><span class="raw">+1.1%p</span> <span class="norm">· 정규화 40.7점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+18.0</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:32%"></div></div><div class="contrib-val">+5.7</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:78%"></div></div><div class="contrib-val">+14.0</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:6%"></div></div><div class="contrib-val">+1.0</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:57%"></div></div><div class="contrib-val">+10.2</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">48.8점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 44.6로 중립 구간에 있어 뚜렷한 눌림은 아직 부족합니다.</p><p>다만 전일 대비 RSI가 -5.30 하락 중이라 아직 바닥이 확인되지 않았으며, 하락 모멘텀이 0.74배로 감점 요인으로 작용했습니다.</p><p>20일 이동평균 대비 -0.42%로 평균선 부근에 위치합니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 48.8점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">TIGER 코리아배당다우존스<span class="stock-bar-meta">0052D0 · 관찰 · 비중 제외</span></div>
@@ -893,6 +969,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:30.7%" aria-label="정규화 30.7점"></div></div>
 <div class="ind-value"><span class="raw">-1.60</span> <span class="norm">· 정규화 30.7점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+26.9</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:25%"></div></div><div class="contrib-val">+6.7</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:67%"></div></div><div class="contrib-val">+18.0</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:12%"></div></div><div class="contrib-val">+3.3</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">54.8점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 45.5로 중립 구간에 있어 뚜렷한 눌림은 아직 부족합니다.</p><p>다만 전일 대비 RSI가 -1.60 하락 중이라 아직 바닥이 확인되지 않았으며, 하락 모멘텀이 0.72배로 감점 요인으로 작용했습니다.</p><p>20일 이동평균 대비 -2.32%로 평균선 부근에 위치합니다.</p><p>관찰 종목으로 비중 편차는 점수에서 제외되며, 기술적 지표만으로 54.8점이 산정됐습니다.</p>
+</div>
+</div>
+</details>
 </div>
 </div>
 <h3 style="font-size:14px;margin:16px 0 10px;color:var(--ink-2)">연금저축 계좌</h3>
@@ -924,6 +1010,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:13.3%" aria-label="정규화 13.3점"></div></div>
 <div class="ind-value"><span class="raw">-3.0%p</span> <span class="norm">· 정규화 13.3점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+14.0</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:14%"></div></div><div class="contrib-val">+2.0</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:0%"></div></div><div class="contrib-val">+0.0</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:28%"></div></div><div class="contrib-val">+3.9</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:24%"></div></div><div class="contrib-val">+3.3</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">23.3점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 76.4로 과매수 영역에 진입해 단기 눌림 매력이 낮습니다.</p><p>RSI 방향은 -0.30로 큰 변화가 없어 방향성 가점·감점이 거의 없습니다.</p><p>20일 이동평균 대비 +2.97%로 평균선 부근에 위치합니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 23.3점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 <div class="stock-bar-card">
 <div class="stock-bar-header">ACE 미국배당다우존스<span class="stock-bar-meta">402970 · 정기</span></div>
@@ -952,6 +1048,16 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="bar-outer"><div class="bar-inner" style="width:53.3%" aria-label="정규화 53.3점"></div></div>
 <div class="ind-value"><span class="raw">+3.0%p</span> <span class="norm">· 정규화 53.3점</span></div>
 </div>
+<details class="stock-detail">
+<summary>점수 산정 상세 보기</summary>
+<div class="detail-body">
+<div class="score-build"><div class="score-build-title">점수 구성 (각 지표 기여도)</div><div class="contrib-row"><div class="contrib-name">20일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+13.6</div></div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:23%"></div></div><div class="contrib-val">+3.1</div></div><div class="contrib-row"><div class="contrib-name">RSI 강도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:2%"></div></div><div class="contrib-val">+0.3</div></div><div class="contrib-row"><div class="contrib-name">RSI 방향</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:26%"></div></div><div class="contrib-val">+3.6</div></div><div class="contrib-row"><div class="contrib-name">비중편차</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:98%"></div></div><div class="contrib-val">+13.3</div></div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">34.0점</span></div></div>
+<div class="commentary">
+<div class="commentary-title">종합 해설</div>
+<p>RSI 69.4로 강세 모멘텀이 유지되고 있으나 눌림은 부족한 상태입니다.</p><p>RSI가 -0.90 하락했으나 과열 구간이라 모멘텀 영향은 0.30배로 제한적입니다.</p><p>20일 이동평균 대비 +3.35%로 가격이 평균선 위에 있어 추가 매수 매력은 낮습니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 34.0점입니다.</p>
+</div>
+</div>
+</details>
 </div>
 </div>
 <h2>종합 점수 계산 설명</h2><div class="explain-grid"><div class="explain-card"><div class="ec-label">20일 이격도</div><div class="ec-weight">가중치 0.35</div>이동평균 대비 현재가 위치. 낮을수록(하락 이격) 매수 점수 높음.</div><div class="explain-card"><div class="ec-label">60일 이격도</div><div class="ec-weight">가중치 0.10</div>중기 추세 확인 보조 지표. 낮을수록 점수 높음.</div><div class="explain-card"><div class="ec-label">RSI 강도</div><div class="ec-weight">가중치 0.22</div>14일 RSI 절대값. 낮을수록(과매도) 매수 점수 높음.</div><div class="explain-card"><div class="ec-label">RSI 방향</div><div class="ec-weight">가중치 0.08</div>전일 대비 RSI 변화. 상승 전환 시 가산점. 반등 확인용 보조지표.</div><div class="explain-card"><div class="ec-label">비중 편차</div><div class="ec-weight">가중치 0.25</div>목표비중 대비 부족분. 클수록(부족) 매수 점수 높음.</div></div><p class="na-note">* N/A 지표 발생 시 나머지 지표 가중치를 비례 재분배. 각 지표는 0~100점으로 정규화 후 가중합산. 점수 모델 v2.0</p><div class="grade-cards" role="group" aria-label="점수 기준"><div class="grade-card gc-buy">60점 이상 — 매수 우선 검토</div><div class="grade-card gc-watch">40~59점 — 관찰</div><div class="grade-card gc-pass">40점 미만 — 관망</div></div>
