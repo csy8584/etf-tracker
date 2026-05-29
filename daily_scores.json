@@ -4,7 +4,7 @@
   "score_model_desc": "rsi_level(0.22)+rsi_momentum(0.08)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-05-28",
-  "generated_at": "2026-05-28 16:00:09 KST",
+  "generated_at": "2026-05-29 10:40:03 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -15,7 +15,7 @@
           "name": "TIGER 미국테크TOP10 INDXX",
           "category": "정기",
           "close": 34465.0,
-          "volume": 1028780,
+          "volume": 1029358,
           "disp20": 1.99,
           "disp60": 11.34,
           "rsi14": 66.7,
@@ -29,19 +29,20 @@
           "current_weight": 23.9,
           "weight_dev": -1.2,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.348,
           "rsi_delta": 1.8,
           "norm_disp20": 43.4,
           "norm_disp60": 12.2,
           "norm_rsi_level": 8.2,
-          "norm_rsi_momentum": 80.0,
+          "norm_rsi_momentum": 60.4,
           "norm_rsi14": 8.2,
           "norm_weight_dev": 25.3,
-          "total_score": 30.9,
+          "total_score": 29.4,
           "contributions": {
             "disp20": 15.2,
             "disp60": 1.2,
             "rsi_level": 1.8,
-            "rsi_momentum": 6.4,
+            "rsi_momentum": 4.8,
             "weight_dev": 6.3
           },
           "dca_tier": {
@@ -56,43 +57,43 @@
             },
             {
               "date": "04/29",
-              "score": 24.6
+              "score": 23.8
             },
             {
               "date": "04/30",
-              "score": 23.9
+              "score": 24.4
             },
             {
               "date": "05/04",
-              "score": 23.5
+              "score": 25.3
             },
             {
               "date": "05/06",
-              "score": 23.7
+              "score": 26.6
             },
             {
               "date": "05/07",
-              "score": 29.0
+              "score": 25.8
             },
             {
               "date": "05/08",
-              "score": 26.5
+              "score": 23.3
             },
             {
               "date": "05/11",
-              "score": 23.4
+              "score": 22.7
             },
             {
               "date": "05/12",
-              "score": 23.8
+              "score": 22.7
             },
             {
               "date": "05/13",
-              "score": 23.8
+              "score": 22.6
             },
             {
               "date": "05/14",
-              "score": 23.1
+              "score": 20.1
             },
             {
               "date": "05/15",
@@ -100,35 +101,35 @@
             },
             {
               "date": "05/18",
-              "score": 18.1
+              "score": 21.3
             },
             {
               "date": "05/19",
-              "score": 23.4
+              "score": 22.3
             },
             {
               "date": "05/20",
-              "score": 19.9
+              "score": 23.1
             },
             {
               "date": "05/21",
-              "score": 25.7
+              "score": 24.0
             },
             {
               "date": "05/22",
-              "score": 25.7
+              "score": 23.2
             },
             {
               "date": "05/26",
-              "score": 21.0
+              "score": 24.0
             },
             {
               "date": "05/27",
-              "score": 26.3
+              "score": 28.7
             },
             {
               "date": "05/28",
-              "score": 31.0
+              "score": 29.5
             }
           ]
         },
@@ -151,6 +152,7 @@
           "current_weight": 24.7,
           "weight_dev": -2.0,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.476,
           "rsi_delta": 0.0,
           "norm_disp20": 43.4,
           "norm_disp60": 41.6,
@@ -178,7 +180,7 @@
             },
             {
               "date": "04/29",
-              "score": 41.1
+              "score": 42.3
             },
             {
               "date": "04/30",
@@ -186,67 +188,67 @@
             },
             {
               "date": "05/04",
-              "score": 44.4
-            },
-            {
-              "date": "05/06",
-              "score": 47.9
-            },
-            {
-              "date": "05/07",
-              "score": 53.1
-            },
-            {
-              "date": "05/08",
-              "score": 42.6
-            },
-            {
-              "date": "05/11",
-              "score": 37.7
-            },
-            {
-              "date": "05/12",
-              "score": 39.7
-            },
-            {
-              "date": "05/13",
               "score": 45.3
             },
             {
+              "date": "05/06",
+              "score": 48.5
+            },
+            {
+              "date": "05/07",
+              "score": 52.2
+            },
+            {
+              "date": "05/08",
+              "score": 40.8
+            },
+            {
+              "date": "05/11",
+              "score": 38.7
+            },
+            {
+              "date": "05/12",
+              "score": 41.1
+            },
+            {
+              "date": "05/13",
+              "score": 43.7
+            },
+            {
               "date": "05/14",
-              "score": 40.0
+              "score": 41.4
             },
             {
               "date": "05/15",
-              "score": 45.0
+              "score": 43.4
             },
             {
               "date": "05/18",
-              "score": 42.7
+              "score": 43.9
             },
             {
               "date": "05/19",
-              "score": 42.4
+              "score": 40.5
             },
             {
               "date": "05/20",
-              "score": 37.7
+              "score": 38.2
             },
             {
               "date": "05/21",
-              "score": 38.4
+              "score": 36.3
             },
             {
               "date": "05/22",
-              "score": 33.7
+              "score": 31.2
             },
             {
               "date": "05/26",
-              "score": 30.2
+              "score": 28.8
             },
             {
               "date": "05/27",
-              "score": 30.1
+              "score": 32.2
             },
             {
               "date": "05/28",
@@ -259,7 +261,7 @@
           "name": "KODEX 미국배당커버드콜 액티브",
           "category": "정기",
           "close": 13370.0,
-          "volume": 868161,
+          "volume": 869939,
           "disp20": 2.2,
           "disp60": 3.92,
           "rsi14": 67.0,
@@ -273,11 +275,12 @@
           "current_weight": 24.3,
           "weight_dev": 3.0,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.342,
           "rsi_delta": 0.1,
           "norm_disp20": 42.7,
           "norm_disp60": 36.9,
           "norm_rsi_level": 7.5,
-          "norm_rsi_momentum": 51.7,
+          "norm_rsi_momentum": 50.6,
           "norm_rsi14": 7.5,
           "norm_weight_dev": 53.3,
           "total_score": 37.7,
@@ -285,7 +288,7 @@
             "disp20": 14.9,
             "disp60": 3.7,
             "rsi_level": 1.7,
-            "rsi_momentum": 4.1,
+            "rsi_momentum": 4.0,
             "weight_dev": 13.3
           },
           "dca_tier": {
@@ -300,79 +303,79 @@
             },
             {
               "date": "04/29",
-              "score": 51.6
+              "score": 49.8
             },
             {
               "date": "04/30",
-              "score": 47.3
+              "score": 48.8
             },
             {
               "date": "05/04",
-              "score": 52.5
+              "score": 50.8
             },
             {
               "date": "05/06",
-              "score": 47.7
+              "score": 48.4
             },
             {
               "date": "05/07",
-              "score": 49.0
+              "score": 49.7
             },
             {
               "date": "05/08",
-              "score": 50.3
+              "score": 48.3
             },
             {
               "date": "05/11",
-              "score": 45.6
+              "score": 46.3
             },
             {
               "date": "05/12",
-              "score": 46.8
-            },
-            {
-              "date": "05/13",
-              "score": 41.2
-            },
-            {
-              "date": "05/14",
-              "score": 39.5
-            },
-            {
-              "date": "05/15",
-              "score": 44.6
-            },
-            {
-              "date": "05/18",
-              "score": 41.7
-            },
-            {
-              "date": "05/19",
               "score": 44.5
             },
             {
+              "date": "05/13",
+              "score": 38.3
+            },
+            {
+              "date": "05/14",
+              "score": 41.8
+            },
+            {
+              "date": "05/15",
+              "score": 42.1
+            },
+            {
+              "date": "05/18",
+              "score": 43.7
+            },
+            {
+              "date": "05/19",
+              "score": 42.0
+            },
+            {
               "date": "05/20",
-              "score": 40.2
+              "score": 40.5
             },
             {
               "date": "05/21",
-              "score": 42.3
+              "score": 40.0
             },
             {
               "date": "05/22",
-              "score": 38.8
+              "score": 35.8
             },
             {
               "date": "05/26",
-              "score": 35.7
+              "score": 35.0
             },
             {
               "date": "05/27",
-              "score": 33.6
+              "score": 36.2
             },
             {
               "date": "05/28",
-              "score": 37.9
+              "score": 37.7
             }
           ]
         },
@@ -381,7 +384,7 @@
           "name": "ACE KRX금현물",
           "category": "정기",
           "close": 29300.0,
-          "volume": 3558583,
+          "volume": 3559707,
           "disp20": -3.6,
           "disp60": -6.99,
           "rsi14": 33.6,
@@ -395,19 +398,20 @@
           "current_weight": 14.6,
           "weight_dev": -1.0,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.936,
           "rsi_delta": -3.2,
           "norm_disp20": 62.0,
           "norm_disp60": 73.3,
           "norm_rsi_level": 91.0,
-          "norm_rsi_momentum": 0.0,
+          "norm_rsi_momentum": 3.2,
           "norm_rsi14": 91.0,
           "norm_weight_dev": 26.7,
-          "total_score": 55.7,
+          "total_score": 56.0,
           "contributions": {
             "disp20": 21.7,
             "disp60": 7.3,
             "rsi_level": 20.0,
-            "rsi_momentum": 0.0,
+            "rsi_momentum": 0.3,
             "weight_dev": 6.7
           },
           "dca_tier": {
@@ -422,51 +426,51 @@
             },
             {
               "date": "04/29",
-              "score": 55.1
+              "score": 55.3
             },
             {
               "date": "04/30",
-              "score": 58.9
+              "score": 58.6
             },
             {
               "date": "05/04",
-              "score": 55.6
+              "score": 55.7
             },
             {
               "date": "05/06",
-              "score": 56.0
+              "score": 56.1
             },
             {
               "date": "05/07",
-              "score": 51.6
+              "score": 50.5
             },
             {
               "date": "05/08",
-              "score": 47.9
+              "score": 46.5
             },
             {
               "date": "05/11",
-              "score": 45.8
+              "score": 46.8
             },
             {
               "date": "05/12",
-              "score": 48.5
+              "score": 47.2
             },
             {
               "date": "05/13",
-              "score": 45.2
+              "score": 44.2
             },
             {
               "date": "05/14",
-              "score": 41.6
+              "score": 42.6
             },
             {
               "date": "05/15",
-              "score": 46.4
+              "score": 47.3
             },
             {
               "date": "05/18",
-              "score": 49.4
+              "score": 49.9
             },
             {
               "date": "05/19",
@@ -474,27 +478,27 @@
             },
             {
               "date": "05/20",
-              "score": 51.9
+              "score": 52.4
             },
             {
               "date": "05/21",
-              "score": 55.8
+              "score": 55.0
             },
             {
               "date": "05/22",
-              "score": 52.6
+              "score": 51.9
             },
             {
               "date": "05/26",
-              "score": 48.9
+              "score": 49.4
             },
             {
               "date": "05/27",
-              "score": 52.2
+              "score": 52.7
             },
             {
               "date": "05/28",
-              "score": 55.8
+              "score": 56.0
             }
           ]
         },
@@ -503,7 +507,7 @@
           "name": "ACE 미국30년국채액티브",
           "category": "정기",
           "close": 7365.0,
-          "volume": 2459541,
+          "volume": 2461063,
           "disp20": -0.42,
           "disp60": -2.01,
           "rsi14": 44.6,
@@ -517,19 +521,20 @@
           "current_weight": 12.5,
           "weight_dev": 1.1,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.74,
           "rsi_delta": -5.3,
           "norm_disp20": 51.4,
           "norm_disp60": 56.7,
           "norm_rsi_level": 63.5,
-          "norm_rsi_momentum": 0.0,
+          "norm_rsi_momentum": 13.0,
           "norm_rsi14": 63.5,
           "norm_weight_dev": 40.7,
-          "total_score": 47.8,
+          "total_score": 48.8,
           "contributions": {
             "disp20": 18.0,
             "disp60": 5.7,
             "rsi_level": 14.0,
-            "rsi_momentum": 0.0,
+            "rsi_momentum": 1.0,
             "weight_dev": 10.2
           },
           "dca_tier": {
@@ -544,43 +549,43 @@
             },
             {
               "date": "04/29",
-              "score": 48.0
+              "score": 48.8
             },
             {
               "date": "04/30",
-              "score": 52.4
+              "score": 52.9
             },
             {
               "date": "05/04",
-              "score": 57.5
+              "score": 57.1
             },
             {
               "date": "05/06",
-              "score": 56.3
+              "score": 55.5
             },
             {
               "date": "05/07",
-              "score": 53.3
+              "score": 52.1
             },
             {
               "date": "05/08",
-              "score": 48.2
+              "score": 49.1
             },
             {
               "date": "05/11",
-              "score": 51.2
-            },
-            {
-              "date": "05/12",
               "score": 51.6
             },
             {
+              "date": "05/12",
+              "score": 52.2
+            },
+            {
               "date": "05/13",
-              "score": 54.9
+              "score": 55.0
             },
             {
               "date": "05/14",
-              "score": 54.7
+              "score": 55.0
             },
             {
               "date": "05/15",
@@ -600,23 +605,23 @@
             },
             {
               "date": "05/21",
-              "score": 64.0
+              "score": 63.7
             },
             {
               "date": "05/22",
-              "score": 60.0
+              "score": 59.3
             },
             {
               "date": "05/26",
-              "score": 53.7
+              "score": 52.4
             },
             {
               "date": "05/27",
-              "score": 50.6
+              "score": 49.6
             },
             {
               "date": "05/28",
-              "score": 47.8
+              "score": 48.8
             }
           ]
         },
@@ -625,7 +630,7 @@
           "name": "TIGER 코리아배당다우존스",
           "category": "관찰",
           "close": 16120.0,
-          "volume": 698932,
+          "volume": 698949,
           "disp20": -2.32,
           "disp60": 0.04,
           "rsi14": 45.5,
@@ -638,19 +643,20 @@
           "outlier_reason": null,
           "current_weight": 2.6,
           "norm_weight_dev": null,
+          "rsi_momentum_mult": 0.724,
           "rsi_delta": -1.6,
           "norm_disp20": 57.7,
           "norm_disp60": 49.9,
           "norm_rsi_level": 61.3,
-          "norm_rsi_momentum": 23.3,
+          "norm_rsi_momentum": 30.7,
           "norm_rsi14": 61.3,
-          "total_score": 54.0,
+          "total_score": 54.8,
           "score_basis": "비중제외",
           "contributions": {
             "disp20": 26.9,
             "disp60": 6.7,
             "rsi_level": 18.0,
-            "rsi_momentum": 2.5,
+            "rsi_momentum": 3.3,
             "weight_dev": null
           },
           "dca_tier": null,
@@ -661,43 +667,43 @@
             },
             {
               "date": "04/29",
-              "score": 37.7
+              "score": 36.8
             },
             {
               "date": "04/30",
-              "score": 35.4
+              "score": 38.0
             },
             {
               "date": "05/04",
-              "score": 41.7
+              "score": 38.8
             },
             {
               "date": "05/06",
-              "score": 36.7
+              "score": 37.2
             },
             {
               "date": "05/07",
-              "score": 38.4
+              "score": 38.0
             },
             {
               "date": "05/08",
-              "score": 38.3
+              "score": 37.7
             },
             {
               "date": "05/11",
-              "score": 36.2
+              "score": 38.3
             },
             {
               "date": "05/12",
-              "score": 43.1
+              "score": 45.2
             },
             {
               "date": "05/13",
-              "score": 47.1
+              "score": 48.6
             },
             {
               "date": "05/14",
-              "score": 44.9
+              "score": 42.2
             },
             {
               "date": "05/15",
@@ -705,35 +711,35 @@
             },
             {
               "date": "05/18",
-              "score": 46.2
+              "score": 48.1
             },
             {
               "date": "05/19",
-              "score": 54.9
+              "score": 56.1
             },
             {
               "date": "05/20",
-              "score": 62.1
+              "score": 62.8
             },
             {
               "date": "05/21",
-              "score": 54.4
+              "score": 52.4
             },
             {
               "date": "05/22",
-              "score": 47.4
+              "score": 44.9
             },
             {
               "date": "05/26",
-              "score": 42.0
+              "score": 44.1
             },
             {
               "date": "05/27",
-              "score": 49.4
+              "score": 51.0
             },
             {
               "date": "05/28",
-              "score": 54.1
+              "score": 54.9
             }
           ]
         }
@@ -742,18 +748,12 @@
         "status": "WATCH",
         "top_code": "411060",
         "top_name": "ACE KRX금현물",
-        "top_score": 55.7
+        "top_score": 56.0
       },
       "history_context": {
-        "has_prev": true,
-        "score_change": 3.5,
-        "contribution_change": {
-          "disp20": 3.2,
-          "disp60": 3.3,
-          "rsi_level": 8.0,
-          "rsi_momentum": 0.0,
-          "weight_dev": 1.4
-        },
+        "has_prev": false,
+        "score_change": null,
+        "contribution_change": null,
         "rank_change_note": null,
         "persistence_days": 1
       },
@@ -764,13 +764,13 @@
             "name": "ACE KRX금현물",
             "code": "411060",
             "label": "적립 +",
-            "score": 55.7
+            "score": 56.0
           },
           {
             "name": "ACE 미국30년국채액티브",
             "code": "453850",
             "label": "적립 +",
-            "score": 47.8
+            "score": 48.8
           }
         ]
       }
@@ -784,7 +784,7 @@
           "name": "ACE 미국S&P500",
           "category": "정기",
           "close": 28310.0,
-          "volume": 774188,
+          "volume": 838690,
           "disp20": 2.97,
           "disp60": 8.89,
           "rsi14": 76.4,
@@ -798,19 +798,20 @@
           "current_weight": 53.0,
           "weight_dev": -3.0,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.2,
           "rsi_delta": -0.3,
           "norm_disp20": 40.1,
           "norm_disp60": 20.4,
           "norm_rsi_level": 0.0,
-          "norm_rsi_momentum": 45.0,
+          "norm_rsi_momentum": 49.0,
           "norm_rsi14": 0.0,
           "norm_weight_dev": 13.3,
-          "total_score": 23.0,
+          "total_score": 23.3,
           "contributions": {
             "disp20": 14.0,
             "disp60": 2.0,
             "rsi_level": 0.0,
-            "rsi_momentum": 3.6,
+            "rsi_momentum": 3.9,
             "weight_dev": 3.3
           },
           "dca_tier": {
@@ -825,79 +826,79 @@
             },
             {
               "date": "04/29",
-              "score": 22.9
+              "score": 24.9
             },
             {
               "date": "04/30",
-              "score": 22.4
+              "score": 25.4
             },
             {
               "date": "05/04",
-              "score": 28.8
+              "score": 26.5
             },
             {
               "date": "05/06",
-              "score": 26.3
+              "score": 26.1
             },
             {
               "date": "05/07",
-              "score": 28.3
+              "score": 25.1
             },
             {
               "date": "05/08",
-              "score": 26.9
+              "score": 23.7
             },
             {
               "date": "05/11",
-              "score": 24.3
+              "score": 22.8
             },
             {
               "date": "05/12",
-              "score": 24.4
-            },
-            {
-              "date": "05/13",
-              "score": 22.4
-            },
-            {
-              "date": "05/14",
               "score": 22.0
             },
             {
+              "date": "05/13",
+              "score": 21.4
+            },
+            {
+              "date": "05/14",
+              "score": 20.8
+            },
+            {
               "date": "05/15",
-              "score": 21.3
+              "score": 20.5
             },
             {
               "date": "05/18",
-              "score": 19.1
+              "score": 22.3
             },
             {
               "date": "05/19",
-              "score": 26.2
+              "score": 23.3
             },
             {
               "date": "05/20",
-              "score": 19.9
+              "score": 23.0
             },
             {
               "date": "05/21",
-              "score": 26.3
+              "score": 23.2
             },
             {
               "date": "05/22",
-              "score": 25.2
+              "score": 22.0
             },
             {
               "date": "05/26",
-              "score": 21.2
+              "score": 22.1
             },
             {
               "date": "05/27",
-              "score": 19.8
+              "score": 22.3
             },
             {
               "date": "05/28",
-              "score": 22.9
+              "score": 23.3
             }
           ]
         },
@@ -906,7 +907,7 @@
           "name": "ACE 미국배당다우존스",
           "category": "정기",
           "close": 15820.0,
-          "volume": 408573,
+          "volume": 409167,
           "disp20": 3.35,
           "disp60": 5.77,
           "rsi14": 69.4,
@@ -920,19 +921,20 @@
           "current_weight": 47.0,
           "weight_dev": 3.0,
           "weight_dev_neutral": false,
+          "rsi_momentum_mult": 0.3,
           "rsi_delta": -0.9,
           "norm_disp20": 38.8,
           "norm_disp60": 30.8,
           "norm_rsi_level": 1.5,
-          "norm_rsi_momentum": 35.0,
+          "norm_rsi_momentum": 45.5,
           "norm_rsi14": 1.5,
           "norm_weight_dev": 53.3,
-          "total_score": 33.1,
+          "total_score": 34.0,
           "contributions": {
             "disp20": 13.6,
             "disp60": 3.1,
             "rsi_level": 0.3,
-            "rsi_momentum": 2.8,
+            "rsi_momentum": 3.6,
             "weight_dev": 13.3
           },
           "dca_tier": {
@@ -947,79 +949,79 @@
             },
             {
               "date": "04/29",
-              "score": 47.3
+              "score": 45.3
             },
             {
               "date": "04/30",
-              "score": 44.1
+              "score": 43.0
             },
             {
               "date": "05/04",
-              "score": 43.1
+              "score": 41.8
             },
             {
               "date": "05/06",
-              "score": 41.9
+              "score": 43.7
             },
             {
               "date": "05/07",
-              "score": 45.1
+              "score": 46.7
             },
             {
               "date": "05/08",
-              "score": 50.1
+              "score": 48.2
             },
             {
               "date": "05/11",
-              "score": 46.9
+              "score": 46.2
             },
             {
               "date": "05/12",
-              "score": 44.2
+              "score": 41.8
             },
             {
               "date": "05/13",
-              "score": 41.5
+              "score": 39.6
             },
             {
               "date": "05/14",
-              "score": 39.2
+              "score": 38.8
             },
             {
               "date": "05/15",
-              "score": 40.2
+              "score": 37.4
             },
             {
               "date": "05/18",
-              "score": 37.1
+              "score": 39.5
             },
             {
               "date": "05/19",
-              "score": 38.4
+              "score": 35.4
             },
             {
               "date": "05/20",
-              "score": 35.9
+              "score": 34.2
             },
             {
               "date": "05/21",
-              "score": 31.2
+              "score": 33.9
             },
             {
               "date": "05/22",
-              "score": 37.1
+              "score": 33.9
             },
             {
               "date": "05/26",
-              "score": 35.0
+              "score": 31.8
             },
             {
               "date": "05/27",
-              "score": 29.4
+              "score": 32.2
             },
             {
               "date": "05/28",
-              "score": 33.1
+              "score": 34.0
             }
           ]
         }
@@ -1028,18 +1030,12 @@
         "status": "WATCH",
         "top_code": "402970",
         "top_name": "ACE 미국배당다우존스",
-        "top_score": 33.1
+        "top_score": 34.0
       },
       "history_context": {
-        "has_prev": true,
-        "score_change": 3.7,
-        "contribution_change": {
-          "disp20": 1.5,
-          "disp60": 1.0,
-          "rsi_level": 1.5,
-          "rsi_momentum": 35.0,
-          "weight_dev": 0.0
-        },
+        "has_prev": false,
+        "score_change": null,
+        "contribution_change": null,
         "rank_change_note": null,
         "persistence_days": 1
       },
