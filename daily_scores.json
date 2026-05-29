@@ -4,7 +4,7 @@
   "score_model_desc": "rsi_level(0.22)+rsi_momentum(0.08)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-05-29",
-  "generated_at": "2026-05-29 16:00:11 KST",
+  "generated_at": "2026-05-29 18:50:44 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -15,7 +15,7 @@
           "name": "TIGER 미국테크TOP10 INDXX",
           "category": "정기",
           "close": 35065.0,
-          "volume": 792200,
+          "volume": 792289,
           "disp20": 3.36,
           "disp60": 12.88,
           "rsi14": 71.4,
@@ -384,7 +384,7 @@
           "name": "ACE KRX금현물",
           "category": "정기",
           "close": 30005.0,
-          "volume": 2121446,
+          "volume": 2121788,
           "disp20": -1.21,
           "disp60": -4.5,
           "rsi14": 43.7,
@@ -752,12 +752,12 @@
       },
       "history_context": {
         "has_prev": true,
-        "score_change": -2.8,
+        "score_change": -2.5,
         "contribution_change": {
           "disp20": -8.0,
           "disp60": -8.3,
           "rsi_level": -25.2,
-          "rsi_momentum": 84.6,
+          "rsi_momentum": 87.8,
           "weight_dev": -1.4
         },
         "rank_change_note": null,
@@ -1040,12 +1040,12 @@
       },
       "history_context": {
         "has_prev": true,
-        "score_change": 1.1,
+        "score_change": 2.0,
         "contribution_change": {
           "disp20": 0.9,
           "disp60": 0.1,
           "rsi_level": -0.5,
-          "rsi_momentum": 5.5,
+          "rsi_momentum": 16.0,
           "weight_dev": 2.0
         },
         "rank_change_note": null,
