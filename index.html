@@ -62,6 +62,10 @@ h2 { font-size: 19px; font-weight: 700; border-left: 3px solid var(--ink); paddi
 .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
 .chip { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius-xs);
   padding: 4px 8px; font-size: 12px; color: var(--ink-2); }
+.chip-oversold { border-color: var(--buy); color: var(--buy); font-weight: 600; }
+.oversold-badge { display: inline-block; margin-left: 8px; padding: 2px 8px;
+  border-radius: var(--radius-pill); font-size: 11px; font-weight: 700;
+  background: var(--buy-soft); color: var(--buy); vertical-align: middle; }
 .contrib { font-size: 13px; color: var(--ink-2); margin: 8px 0; }
 .contrib b { color: var(--ink); }
 .score-change { font-size: 13px; margin: 4px 0; }
@@ -191,9 +195,9 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
   <div class="eyebrow">ETF Tracker · 일일 신호 리포트</div>
   <h1>오늘의 ETF 적립 신호</h1>
   <p class="meta">
-    분석일(KST): 2026-06-10 16:00 KST &nbsp;·&nbsp;
+    분석일(KST): 2026-06-10 18:52 KST &nbsp;·&nbsp;
     데이터 기준일: 2026-06-10 &nbsp;·&nbsp;
-    생성: 2026-06-10 16:00:09 KST &nbsp;·&nbsp;
+    생성: 2026-06-10 18:52:00 KST &nbsp;·&nbsp;
     <span style="color:var(--ink-4);font-size:12px">Engine: update_prices.py v4</span>
   </p>
   <div class="market-state " title="시장 중립~강세 (평균 RSI 50.5, 20일 이격 -0.86%)">시장 중립~강세 (평균 RSI 50.5, 20일 이격 -0.86%)</div>
@@ -206,7 +210,7 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div style="font-size:12px;color:var(--ink-3);margin-bottom:12px">411060</div>
 <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="score-big">60.6</span><span class="score-denom">/100</span><span class="pill pill-buy">매수 우선 검토</span></div>
 <div style="margin-top:6px"><span class="dca-pill dca-2">적립 ++</span></div>
-<div class="chip-row"><span class="chip">20일 이격 -5.75% · 정규화 69.2점</span><span class="chip">60일 이격 -8.41% · 정규화 78.0점</span><span class="chip">RSI 강도 31.6 · 정규화 96.0점</span><span class="chip">RSI 방향 -6.60↓ · 정규화 1.4점</span><span class="chip">비중편차 -0.6%p · 정규화 29.3점</span></div>
+<div class="chip-row"><span class="chip">20일 이격 -5.75% · 정규화 69.2점</span><span class="chip">60일 이격 -8.41% · 정규화 78.0점</span><span class="chip">RSI 강도 31.6 · 정규화 96.0점</span><span class="chip chip-oversold">과매도(RSI&lt;35) 1일째 지속</span><span class="chip">RSI 방향 -6.60↓ · 정규화 1.4점</span><span class="chip">비중편차 -0.6%p · 정규화 29.3점</span></div>
 <div class="contrib">점수 구성: <b>20일 이격도 +24.2</b> · 60일 이격도 +7.8 · RSI 강도 +21.1 · RSI 방향 +0.1 · 비중편차 +7.3 = 합계 60.5</div>
 <div class="score-change">전일 대비 <span class="up">+1.3점 ▲</span></div>
 <div class="persist-badge">신호 지속 신규 진입</div>
@@ -888,7 +892,7 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 </details>
 </div>
 <div class="stock-bar-card">
-<div class="stock-bar-header">ACE KRX금현물<span class="stock-bar-meta">411060 · 정기</span></div>
+<div class="stock-bar-header">ACE KRX금현물<span class="stock-bar-meta">411060 · 정기</span><span class="oversold-badge">과매도 1일째</span></div>
 <div class="ind-row">
 <div class="ind-name">20일 이격도</div>
 <div class="bar-outer"><div class="bar-inner" style="width:69.2%" aria-label="정규화 69.2점"></div></div>
@@ -920,7 +924,7 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
 <div class="score-build"><div class="score-build-title">점수 구성 (정규화 점수 × 가중치 = 부분 점수)</div><div class="contrib-row"><div class="contrib-name">20일 이격도<span class="cbadge cbadge-rank">핵심</span></div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:100%"></div></div><div class="contrib-val">+24.2</div></div><div class="contrib-calc">69.2점 × 0.35 = +24.2</div><div class="contrib-row"><div class="contrib-name">60일 이격도</div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:32%"></div></div><div class="contrib-val">+7.8</div></div><div class="contrib-calc">78.0점 × 0.10 = +7.8</div><div class="contrib-row"><div class="contrib-name">RSI 강도<span class="cbadge cbadge-rank">보조</span></div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:87%"></div></div><div class="contrib-val">+21.1</div></div><div class="contrib-calc">96.0점 × 0.22 = +21.1</div><div class="contrib-row"><div class="contrib-name">RSI 방향<span class="cbadge cbadge-suppress">억제</span></div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:0%"></div></div><div class="contrib-val">+0.1</div></div><div class="contrib-calc"><div class="rsi-steps"><div class="rsi-step">RSI 변화량: <b>-6.60</b></div><div class="rsi-step">① 기본 방향점수<br>&nbsp;&nbsp;<b>-6.60 → 0점</b><br>&nbsp;&nbsp;<span class="rsi-hint">(ΔRSI -3 이하 = 최저점)</span></div><div class="rsi-step">② 과열 보정<br>&nbsp;&nbsp;현재 RSI <b>31.6</b> → 보정계수 <b>97%</b>&nbsp;<span class="rsi-hint">(RSI 30=100% / RSI 75=20%)</span><br>&nbsp;&nbsp;<b>0점 → 1점</b>으로 중립 조정<br>&nbsp;&nbsp;<span class="rsi-hint">(50 + (0 - 50) × 0.97)</span></div><div class="rsi-step">③ 최종 반영<br>&nbsp;&nbsp;<b>1.4점 × 0.08 = +0.1</b></div></div></div><div class="contrib-row"><div class="contrib-name">비중편차<span class="cbadge cbadge-suppress">억제</span></div><div class="contrib-bar-outer"><div class="contrib-bar-inner" style="width:30%"></div></div><div class="contrib-val">+7.3</div></div><div class="contrib-calc">29.3점 × 0.25 = +7.3</div><div class="contrib-total"><span class="lbl">종합 점수</span><span class="val">60.6점</span></div><div class="contrib-note">핵심·보조 = 점수 순위 / 억제 = 정규화 50점 미만(점수를 끌어올리지 못하는 요소)</div></div>
 <div class="commentary">
 <div class="commentary-title">종합 해설</div>
-<p>RSI 31.6로 과매도에 근접해 매수 압력이 형성되는 눌림 구간입니다.</p><p>다만 전일 대비 RSI가 -6.60 하락 중이라 아직 바닥이 확인되지 않았으며, 하락 모멘텀이 0.97배로 감점 요인으로 작용했습니다.</p><p>20일 이동평균 대비 -5.75%로 가격이 평균선 아래에 있어 매수 매력이 있습니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 60.6점입니다.</p><p>가격 메리트는 높으나 하락 흐름이 아직 지속 중인, 바닥 미확인 구간입니다.</p>
+<p>RSI 31.6로 과매도에 근접해 매수 압력이 형성되는 눌림 구간입니다.</p><p>과매도권 진입 첫날로, 일시적인 단기 눌림일 가능성이 있는 구간입니다.</p><p>다만 전일 대비 RSI가 -6.60 하락 중이라 아직 바닥이 확인되지 않았으며, 하락 모멘텀이 0.97배로 감점 요인으로 작용했습니다.</p><p>20일 이동평균 대비 -5.75%로 가격이 평균선 아래에 있어 매수 매력이 있습니다.</p><p>목표비중에 근접해 비중 측면은 중립이며, 종합 60.6점입니다.</p><p>가격 메리트는 높으나 하락 흐름이 아직 지속 중인, 바닥 미확인 구간입니다.</p>
 </div>
 </div>
 </details>
@@ -1092,6 +1096,10 @@ footer { text-align: center; font-size: 12px; color: var(--ink-4); padding: 32px
       <tr><td>30~35</td><td>과매도 근접</td></tr>
       <tr><td>30 이하</td><td>과매도 영역</td></tr>
     </table>
+    <p style="font-size:11px;color:var(--ink-3);margin-top:8px;line-height:1.7">
+      <b>과매도 지속일</b> (RSI 35 미만 연속 거래일, 표시 전용 — 점수 미반영):<br>
+      1일 = 단기 눌림 / 2~4일 = 조정 지속 / 5일 이상 = 추세 약세 주의
+    </p>
   </div>
   <div class="guide-card">
     <h4>이격도 해석 기준</h4>
