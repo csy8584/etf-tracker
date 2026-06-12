@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "score_model_version": "v2.2",
-  "score_model_desc": "conditional momentum (완만 곡선 30~75) + 화살표 데드존",
+  "score_model_version": "v2.3",
+  "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-06-12",
-  "generated_at": "2026-06-12 18:37:04 KST",
+  "generated_at": "2026-06-12 18:58:21 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
-      "eval_sum": 14678170.0,
+      "eval_sum": 15508815.0,
       "stocks": [
         {
           "code": "381170",
@@ -22,15 +22,15 @@
           "prev_rsi14": 39.2,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "equity",
           "target_weight": 22.7,
-          "qty": 103.0,
-          "eval_amount": 3363980.0,
+          "qty": 119.0,
+          "eval_amount": 3886540.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 22.9,
-          "weight_dev": -0.2,
+          "current_weight": 25.1,
+          "weight_dev": -2.4,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.833,
           "rsi_delta": 0.2,
@@ -39,16 +39,16 @@
           "norm_rsi_level": 76.5,
           "norm_rsi_momentum": 52.7,
           "norm_rsi14": 76.5,
-          "norm_weight_dev": 32.0,
-          "total_score_base": 56.3,
+          "norm_weight_dev": 17.3,
+          "total_score_base": 52.6,
           "oversold_bonus": 0.0,
-          "total_score": 56.3,
+          "total_score": 52.6,
           "contributions": {
             "disp20": 23.2,
             "disp60": 4.1,
             "rsi_level": 16.8,
             "rsi_momentum": 4.2,
-            "weight_dev": 8.0
+            "weight_dev": 4.3
           },
           "dca_tier": {
             "label": "적립 +",
@@ -58,83 +58,83 @@
           "score_history": [
             {
               "date": "05/14",
-              "score": 16.6
+              "score": 12.6
             },
             {
               "date": "05/15",
-              "score": 20.0
+              "score": 16.3
             },
             {
               "date": "05/18",
-              "score": 21.3
+              "score": 17.6
             },
             {
               "date": "05/19",
-              "score": 22.3
+              "score": 18.6
             },
             {
               "date": "05/20",
-              "score": 23.1
+              "score": 19.4
             },
             {
               "date": "05/21",
-              "score": 24.0
+              "score": 20.3
             },
             {
               "date": "05/22",
-              "score": 23.2
+              "score": 19.5
             },
             {
               "date": "05/26",
-              "score": 24.0
+              "score": 20.3
             },
             {
               "date": "05/27",
-              "score": 28.7
+              "score": 25.1
             },
             {
               "date": "05/28",
-              "score": 29.5
+              "score": 25.8
             },
             {
               "date": "05/29",
-              "score": 25.5
+              "score": 21.8
             },
             {
               "date": "06/01",
-              "score": 24.6
+              "score": 20.9
             },
             {
               "date": "06/02",
-              "score": 24.9
+              "score": 21.2
             },
             {
               "date": "06/04",
-              "score": 30.8
+              "score": 27.1
             },
             {
               "date": "06/05",
-              "score": 32.4
+              "score": 28.8
             },
             {
               "date": "06/08",
-              "score": 42.0
+              "score": 38.3
             },
             {
               "date": "06/09",
-              "score": 46.4
+              "score": 42.7
             },
             {
               "date": "06/10",
-              "score": 50.5
+              "score": 46.9
             },
             {
               "date": "06/11",
-              "score": 53.4
+              "score": 49.9
             },
             {
               "date": "06/12",
-              "score": 56.2
+              "score": 52.6
             }
           ]
         },
@@ -150,15 +150,15 @@
           "prev_rsi14": 54.5,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "equity",
           "target_weight": 22.7,
           "qty": 119.0,
           "eval_amount": 3717560.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 25.3,
-          "weight_dev": -2.6,
+          "current_weight": 24.0,
+          "weight_dev": -1.3,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.572,
           "rsi_delta": -0.4,
@@ -167,16 +167,16 @@
           "norm_rsi_level": 39.8,
           "norm_rsi_momentum": 46.2,
           "norm_rsi14": 39.8,
-          "norm_weight_dev": 16.0,
-          "total_score_base": 37.1,
+          "norm_weight_dev": 24.7,
+          "total_score_base": 39.2,
           "oversold_bonus": 0.0,
-          "total_score": 37.1,
+          "total_score": 39.2,
           "contributions": {
             "disp20": 16.7,
             "disp60": 3.9,
             "rsi_level": 8.8,
             "rsi_momentum": 3.7,
-            "weight_dev": 4.0
+            "weight_dev": 6.2
           },
           "dca_tier": {
             "label": "기본 적립",
@@ -186,83 +186,83 @@
           "score_history": [
             {
               "date": "05/14",
-              "score": 43.1
+              "score": 45.5
             },
             {
               "date": "05/15",
-              "score": 43.4
+              "score": 45.6
             },
             {
               "date": "05/18",
-              "score": 43.9
+              "score": 46.1
             },
             {
               "date": "05/19",
-              "score": 40.5
+              "score": 42.7
             },
             {
               "date": "05/20",
-              "score": 38.2
+              "score": 40.5
             },
             {
               "date": "05/21",
-              "score": 36.3
+              "score": 38.5
             },
             {
               "date": "05/22",
-              "score": 31.2
+              "score": 33.4
             },
             {
               "date": "05/26",
-              "score": 28.8
+              "score": 31.0
             },
             {
               "date": "05/27",
-              "score": 32.2
+              "score": 34.4
             },
             {
               "date": "05/28",
-              "score": 34.1
+              "score": 36.4
             },
             {
               "date": "05/29",
-              "score": 31.3
+              "score": 33.5
             },
             {
               "date": "06/01",
-              "score": 28.5
+              "score": 30.8
             },
             {
               "date": "06/02",
-              "score": 24.9
+              "score": 27.1
             },
             {
               "date": "06/04",
-              "score": 26.8
+              "score": 29.1
             },
             {
               "date": "06/05",
-              "score": 24.7
+              "score": 27.0
             },
             {
               "date": "06/08",
-              "score": 29.4
+              "score": 31.7
             },
             {
               "date": "06/09",
-              "score": 36.5
+              "score": 38.7
             },
             {
               "date": "06/10",
-              "score": 34.9
+              "score": 37.2
             },
             {
               "date": "06/11",
-              "score": 34.2
+              "score": 36.5
             },
             {
               "date": "06/12",
-              "score": 37.0
+              "score": 39.3
             }
           ]
         },
@@ -278,15 +278,15 @@
           "prev_rsi14": 52.7,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "covered_call",
           "target_weight": 27.3,
-          "qty": 270.0,
-          "eval_amount": 3616650.0,
+          "qty": 293.0,
+          "eval_amount": 3924735.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 24.6,
-          "weight_dev": 2.7,
+          "current_weight": 25.3,
+          "weight_dev": 2.0,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.54,
           "rsi_delta": 3.2,
@@ -295,16 +295,16 @@
           "norm_rsi_level": 35.2,
           "norm_rsi_momentum": 77.0,
           "norm_rsi14": 35.2,
-          "norm_weight_dev": 51.3,
-          "total_score_base": 47.7,
+          "norm_weight_dev": 46.7,
+          "total_score_base": 46.5,
           "oversold_bonus": 0.0,
-          "total_score": 47.7,
+          "total_score": 46.5,
           "contributions": {
             "disp20": 17.0,
             "disp60": 3.9,
             "rsi_level": 7.7,
             "rsi_momentum": 6.2,
-            "weight_dev": 12.8
+            "weight_dev": 11.7
           },
           "dca_tier": {
             "label": "적립 +",
@@ -314,83 +314,83 @@
           "score_history": [
             {
               "date": "05/14",
-              "score": 43.0
+              "score": 41.9
             },
             {
               "date": "05/15",
-              "score": 42.1
+              "score": 41.1
             },
             {
               "date": "05/18",
-              "score": 43.7
+              "score": 42.7
             },
             {
               "date": "05/19",
-              "score": 42.0
+              "score": 41.0
             },
             {
               "date": "05/20",
-              "score": 40.5
+              "score": 39.5
             },
             {
               "date": "05/21",
-              "score": 40.0
+              "score": 38.9
             },
             {
               "date": "05/22",
-              "score": 35.8
+              "score": 34.8
             },
             {
               "date": "05/26",
-              "score": 35.0
+              "score": 33.9
             },
             {
               "date": "05/27",
-              "score": 36.2
+              "score": 35.2
             },
             {
               "date": "05/28",
-              "score": 37.7
+              "score": 36.6
             },
             {
               "date": "05/29",
-              "score": 37.9
+              "score": 36.9
             },
             {
               "date": "06/01",
-              "score": 36.7
+              "score": 35.7
             },
             {
               "date": "06/02",
-              "score": 38.5
+              "score": 37.4
             },
             {
               "date": "06/04",
-              "score": 38.3
+              "score": 37.2
             },
             {
               "date": "06/05",
-              "score": 34.2
+              "score": 33.1
             },
             {
               "date": "06/08",
-              "score": 39.2
+              "score": 38.1
             },
             {
               "date": "06/09",
-              "score": 45.1
+              "score": 44.1
             },
             {
               "date": "06/10",
-              "score": 47.4
+              "score": 46.3
             },
             {
               "date": "06/11",
-              "score": 46.8
+              "score": 45.7
             },
             {
               "date": "06/12",
-              "score": 47.6
+              "score": 46.5
             }
           ]
         },
@@ -406,15 +406,15 @@
           "prev_rsi14": 27.9,
           "oversold_days": 3,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "gold",
           "target_weight": 13.6,
           "qty": 74.0,
           "eval_amount": 2087540.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 14.2,
-          "weight_dev": -0.6,
+          "current_weight": 13.5,
+          "weight_dev": 0.1,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.913,
           "rsi_delta": 7.0,
@@ -423,16 +423,16 @@
           "norm_rsi_level": 87.8,
           "norm_rsi_momentum": 95.7,
           "norm_rsi14": 87.8,
-          "norm_weight_dev": 29.3,
-          "total_score_base": 65.4,
+          "norm_weight_dev": 34.0,
+          "total_score_base": 66.6,
           "oversold_bonus": 0.0,
-          "total_score": 65.4,
+          "total_score": 66.6,
           "contributions": {
             "disp20": 23.4,
             "disp60": 7.7,
             "rsi_level": 19.3,
             "rsi_momentum": 7.7,
-            "weight_dev": 7.3
+            "weight_dev": 8.5
           },
           "dca_tier": {
             "label": "적립 ++",
@@ -442,83 +442,83 @@
           "score_history": [
             {
               "date": "05/14",
-              "score": 44.0
+              "score": 45.5
             },
             {
               "date": "05/15",
-              "score": 47.3
+              "score": 48.7
             },
             {
               "date": "05/18",
-              "score": 49.9
+              "score": 51.3
             },
             {
               "date": "05/19",
-              "score": 51.9
-            },
-            {
-              "date": "05/20",
-              "score": 52.4
-            },
-            {
-              "date": "05/21",
-              "score": 55.0
-            },
-            {
-              "date": "05/22",
-              "score": 51.9
-            },
-            {
-              "date": "05/26",
-              "score": 49.4
-            },
-            {
-              "date": "05/27",
-              "score": 52.7
-            },
-            {
-              "date": "05/28",
-              "score": 56.0
-            },
-            {
-              "date": "05/29",
               "score": 53.3
             },
             {
+              "date": "05/20",
+              "score": 53.8
+            },
+            {
+              "date": "05/21",
+              "score": 56.4
+            },
+            {
+              "date": "05/22",
+              "score": 53.3
+            },
+            {
+              "date": "05/26",
+              "score": 50.8
+            },
+            {
+              "date": "05/27",
+              "score": 54.1
+            },
+            {
+              "date": "05/28",
+              "score": 57.3
+            },
+            {
+              "date": "05/29",
+              "score": 54.6
+            },
+            {
               "date": "06/01",
-              "score": 50.4
+              "score": 51.7
             },
             {
               "date": "06/02",
-              "score": 50.6
+              "score": 52.0
             },
             {
               "date": "06/04",
-              "score": 47.6
+              "score": 48.9
             },
             {
               "date": "06/05",
-              "score": 48.4
+              "score": 49.7
             },
             {
               "date": "06/08",
-              "score": 55.8
+              "score": 57.1
             },
             {
               "date": "06/09",
-              "score": 59.2
-            },
-            {
-              "date": "06/10",
               "score": 60.5
             },
             {
+              "date": "06/10",
+              "score": 61.8
+            },
+            {
               "date": "06/11",
-              "score": 64.2
+              "score": 65.5
             },
             {
               "date": "06/12",
-              "score": 65.4
+              "score": 66.7
             }
           ]
         },
@@ -534,15 +534,15 @@
           "prev_rsi14": 48.6,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "bond",
           "target_weight": 13.6,
           "qty": 253.0,
           "eval_amount": 1892440.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 12.9,
-          "weight_dev": 0.7,
+          "current_weight": 12.2,
+          "weight_dev": 1.4,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.531,
           "rsi_delta": 7.8,
@@ -551,102 +551,102 @@
           "norm_rsi_level": 34.0,
           "norm_rsi_momentum": 76.5,
           "norm_rsi14": 34.0,
-          "norm_weight_dev": 38.0,
-          "total_score_base": 44.0,
+          "norm_weight_dev": 42.7,
+          "total_score_base": 45.2,
           "oversold_bonus": 0.0,
-          "total_score": 44.0,
+          "total_score": 45.2,
           "contributions": {
             "disp20": 15.9,
             "disp60": 5.0,
             "rsi_level": 7.5,
             "rsi_momentum": 6.1,
-            "weight_dev": 9.5
+            "weight_dev": 10.7
           },
           "dca_tier": {
-            "label": "기본 적립",
-            "desc": "정기 적립 유지",
-            "min_score": 0
+            "label": "적립 +",
+            "desc": "소폭 추가 검토 구간",
+            "min_score": 45
           },
           "score_history": [
             {
               "date": "05/14",
-              "score": 58.5
+              "score": 59.7
             },
             {
               "date": "05/15",
-              "score": 57.6
+              "score": 58.8
             },
             {
               "date": "05/18",
-              "score": 59.2
+              "score": 60.4
             },
             {
               "date": "05/19",
-              "score": 63.1
+              "score": 64.3
             },
             {
               "date": "05/20",
-              "score": 61.0
+              "score": 62.2
             },
             {
               "date": "05/21",
-              "score": 63.7
+              "score": 64.8
             },
             {
               "date": "05/22",
-              "score": 59.3
+              "score": 60.4
             },
             {
               "date": "05/26",
-              "score": 52.4
+              "score": 53.5
             },
             {
               "date": "05/27",
-              "score": 49.6
+              "score": 50.7
             },
             {
               "date": "05/28",
-              "score": 48.8
+              "score": 49.9
             },
             {
               "date": "05/29",
-              "score": 48.5
+              "score": 49.6
             },
             {
               "date": "06/01",
-              "score": 45.8
+              "score": 47.0
             },
             {
               "date": "06/02",
-              "score": 47.4
+              "score": 48.5
             },
             {
               "date": "06/04",
-              "score": 45.0
+              "score": 46.1
             },
             {
               "date": "06/05",
-              "score": 47.8
+              "score": 49.0
             },
             {
               "date": "06/08",
-              "score": 46.8
+              "score": 47.9
             },
             {
               "date": "06/09",
-              "score": 49.3
+              "score": 50.5
             },
             {
               "date": "06/10",
-              "score": 48.8
+              "score": 50.0
             },
             {
               "date": "06/11",
-              "score": 47.7
+              "score": 48.9
             },
             {
               "date": "06/12",
-              "score": 44.0
+              "score": 45.2
             }
           ]
         },
@@ -662,14 +662,14 @@
           "prev_rsi14": 44.7,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "equity",
           "target_weight": null,
           "qty": 24.0,
           "eval_amount": 393120.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 2.7,
+          "current_weight": 2.5,
           "norm_weight_dev": null,
           "rsi_momentum_mult": 0.625,
           "rsi_delta": 6.4,
@@ -776,17 +776,17 @@
         "status": "SIGNAL",
         "top_code": "411060",
         "top_name": "ACE KRX금현물",
-        "top_score": 65.4
+        "top_score": 66.6
       },
       "history_context": {
         "has_prev": true,
-        "score_change": 1.2,
+        "score_change": 2.4,
         "contribution_change": {
           "disp20": -7.8,
           "disp60": -6.9,
           "rsi_level": -12.2,
           "rsi_momentum": 95.7,
-          "weight_dev": -1.4
+          "weight_dev": 3.3
         },
         "rank_change_note": null,
         "persistence_days": 3
@@ -798,19 +798,25 @@
             "name": "ACE KRX금현물",
             "code": "411060",
             "label": "적립 ++",
-            "score": 65.4
+            "score": 66.6
           },
           {
             "name": "TIGER 미국테크TOP10 INDXX",
             "code": "381170",
             "label": "적립 +",
-            "score": 56.3
+            "score": 52.6
           },
           {
             "name": "KODEX 미국배당커버드콜 액티브",
             "code": "441640",
             "label": "적립 +",
-            "score": 47.7
+            "score": 46.5
+          },
+          {
+            "name": "ACE 미국30년국채액티브",
+            "code": "453850",
+            "label": "적립 +",
+            "score": 45.2
           }
         ]
       }
@@ -831,7 +837,7 @@
           "prev_rsi14": 52.0,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "equity",
           "target_weight": 50.0,
           "qty": 116.0,
           "eval_amount": 3269460.0,
@@ -959,7 +965,7 @@
           "prev_rsi14": 59.1,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
-          "asset_class": null,
+          "asset_class": "equity",
           "target_weight": 50.0,
           "qty": 184.0,
           "eval_amount": 2925600.0,
