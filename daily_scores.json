@@ -4,7 +4,7 @@
   "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-06-12",
-  "generated_at": "2026-06-13 16:00:19 KST",
+  "generated_at": "2026-06-14 16:00:28 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
