@@ -4,7 +4,7 @@
   "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-07-24",
-  "generated_at": "2026-07-24 16:00:08 KST",
+  "generated_at": "2026-07-25 16:00:25 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -15,7 +15,7 @@
           "name": "TIGER 미국테크TOP10 INDXX",
           "category": "정기",
           "close": 30835.0,
-          "volume": 631138,
+          "volume": 631145,
           "disp20": -4.61,
           "disp60": -7.06,
           "rsi14": 35.2,
@@ -399,7 +399,7 @@
           "name": "ACE KRX금현물",
           "category": "정기",
           "close": 26325.0,
-          "volume": 497191,
+          "volume": 497261,
           "disp20": -3.33,
           "disp60": -8.78,
           "rsi14": 36.9,
