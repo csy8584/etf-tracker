@@ -4,7 +4,7 @@
   "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-07-31",
-  "generated_at": "2026-07-31 16:00:10 KST",
+  "generated_at": "2026-08-01 16:00:24 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -271,7 +271,7 @@
           "name": "KODEX 미국배당커버드콜 액티브",
           "category": "정기",
           "close": 12825.0,
-          "volume": 1284424,
+          "volume": 1284470,
           "disp20": -2.75,
           "disp60": -3.55,
           "rsi14": 35.9,
