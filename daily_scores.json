@@ -3,52 +3,52 @@
   "score_model_version": "v2.3",
   "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
-  "data_date": "2026-09-11",
-  "generated_at": "2026-09-13 16:00:24 KST",
+  "data_date": "2026-09-14",
+  "generated_at": "2026-09-14 16:00:11 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
-      "eval_sum": 16466755.0,
+      "eval_sum": 16401255.0,
       "stocks": [
         {
           "code": "381170",
           "name": "TIGER 미국테크TOP10 INDXX",
           "category": "정기",
-          "close": 30045.0,
-          "volume": 1852493,
-          "disp20": -1.54,
-          "disp60": -4.71,
-          "rsi14": 38.8,
-          "prev_rsi14": 37.4,
+          "close": 29980.0,
+          "volume": 630137,
+          "disp20": -1.44,
+          "disp60": -4.77,
+          "rsi14": 38.0,
+          "prev_rsi14": 38.8,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
           "asset_class": "equity",
           "target_weight": 22.7,
           "qty": 141.0,
-          "eval_amount": 4236345.0,
+          "eval_amount": 4227180.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 25.7,
-          "weight_dev": -3.0,
+          "current_weight": 25.8,
+          "weight_dev": -3.1,
           "weight_dev_neutral": false,
-          "rsi_momentum_mult": 0.844,
-          "rsi_delta": 1.4,
-          "norm_disp20": 55.1,
-          "norm_disp60": 65.7,
-          "norm_rsi_level": 78.0,
-          "norm_rsi_momentum": 69.7,
-          "norm_rsi14": 78.0,
-          "norm_weight_dev": 13.3,
-          "total_score_base": 51.9,
+          "rsi_momentum_mult": 0.858,
+          "rsi_delta": -0.8,
+          "norm_disp20": 54.8,
+          "norm_disp60": 65.9,
+          "norm_rsi_level": 80.0,
+          "norm_rsi_momentum": 38.6,
+          "norm_rsi14": 80.0,
+          "norm_weight_dev": 12.7,
+          "total_score_base": 49.6,
           "oversold_bonus": 0.0,
-          "total_score": 51.9,
+          "total_score": 49.6,
           "contributions": {
-            "disp20": 19.3,
+            "disp20": 19.2,
             "disp60": 6.6,
-            "rsi_level": 17.2,
-            "rsi_momentum": 5.6,
-            "weight_dev": 3.3
+            "rsi_level": 17.6,
+            "rsi_momentum": 3.1,
+            "weight_dev": 3.2
           },
           "dca_tier": {
             "label": "적립 +",
@@ -57,12 +57,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 39.3
-            },
-            {
               "date": "08/18",
-              "score": 43.8
+              "score": 46.6
             },
             {
               "date": "08/19",
@@ -114,27 +110,31 @@
             },
             {
               "date": "09/04",
-              "score": 48.4
+              "score": 48.3
             },
             {
               "date": "09/07",
-              "score": 45.9
+              "score": 45.8
             },
             {
               "date": "09/08",
-              "score": 48.7
-            },
-            {
-              "date": "09/09",
               "score": 48.6
             },
             {
+              "date": "09/09",
+              "score": 48.5
+            },
+            {
               "date": "09/10",
-              "score": 50.5
+              "score": 50.4
             },
             {
               "date": "09/11",
-              "score": 51.9
+              "score": 51.8
+            },
+            {
+              "date": "09/14",
+              "score": 49.6
             }
           ]
         },
@@ -142,18 +142,18 @@
           "code": "309230",
           "name": "ACE 미국WideMoat동일가중",
           "category": "정기",
-          "close": 29310.0,
-          "volume": 8424,
-          "disp20": -5.81,
-          "disp60": -7.12,
-          "rsi14": 24.5,
-          "prev_rsi14": 25.2,
-          "oversold_days": 5,
+          "close": 29265.0,
+          "volume": 3351,
+          "disp20": -5.47,
+          "disp60": -7.16,
+          "rsi14": 24.2,
+          "prev_rsi14": 24.5,
+          "oversold_days": 6,
           "oversold_threshold": 35.0,
           "asset_class": "equity",
           "target_weight": 22.7,
           "qty": 133.0,
-          "eval_amount": 3898230.0,
+          "eval_amount": 3892245.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
@@ -161,21 +161,21 @@
           "weight_dev": -1.0,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 1.0,
-          "rsi_delta": -0.7,
-          "norm_disp20": 69.4,
-          "norm_disp60": 73.7,
+          "rsi_delta": -0.3,
+          "norm_disp20": 68.2,
+          "norm_disp60": 73.9,
           "norm_rsi_level": 100.0,
-          "norm_rsi_momentum": 38.3,
+          "norm_rsi_momentum": 45.0,
           "norm_rsi14": 100.0,
           "norm_weight_dev": 26.7,
-          "total_score_base": 63.4,
+          "total_score_base": 63.5,
           "oversold_bonus": 4.0,
-          "total_score": 67.4,
+          "total_score": 67.5,
           "contributions": {
-            "disp20": 24.3,
+            "disp20": 23.9,
             "disp60": 7.4,
             "rsi_level": 22.0,
-            "rsi_momentum": 3.1,
+            "rsi_momentum": 3.6,
             "weight_dev": 6.7
           },
           "dca_tier": {
@@ -185,12 +185,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 30.8
-            },
-            {
               "date": "08/18",
-              "score": 40.9
+              "score": 43.0
             },
             {
               "date": "08/19",
@@ -242,11 +238,11 @@
             },
             {
               "date": "09/04",
-              "score": 55.2
+              "score": 55.1
             },
             {
               "date": "09/07",
-              "score": 57.6
+              "score": 57.5
             },
             {
               "date": "09/08",
@@ -254,14 +250,18 @@
             },
             {
               "date": "09/09",
-              "score": 62.8
+              "score": 62.7
             },
             {
               "date": "09/10",
-              "score": 66.3
+              "score": 66.2
             },
             {
               "date": "09/11",
+              "score": 67.3
+            },
+            {
+              "date": "09/14",
               "score": 67.4
             }
           ]
@@ -270,41 +270,41 @@
           "code": "441640",
           "name": "KODEX 미국배당커버드콜 액티브",
           "category": "정기",
-          "close": 12275.0,
-          "volume": 615246,
-          "disp20": -2.9,
-          "disp60": -5.85,
-          "rsi14": 25.5,
-          "prev_rsi14": 25.0,
-          "oversold_days": 5,
+          "close": 12185.0,
+          "volume": 605102,
+          "disp20": -3.06,
+          "disp60": -6.31,
+          "rsi14": 21.6,
+          "prev_rsi14": 21.1,
+          "oversold_days": 11,
           "oversold_threshold": 35.0,
           "asset_class": "covered_call",
           "target_weight": 27.3,
           "qty": 337.0,
-          "eval_amount": 4136675.0,
+          "eval_amount": 4106345.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 25.1,
-          "weight_dev": 2.2,
+          "current_weight": 25.0,
+          "weight_dev": 2.3,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 1.0,
           "rsi_delta": 0.5,
-          "norm_disp20": 59.7,
-          "norm_disp60": 69.5,
+          "norm_disp20": 60.2,
+          "norm_disp60": 71.0,
           "norm_rsi_level": 100.0,
           "norm_rsi_momentum": 58.3,
           "norm_rsi14": 100.0,
-          "norm_weight_dev": 48.0,
-          "total_score_base": 66.5,
+          "norm_weight_dev": 48.7,
+          "total_score_base": 67.0,
           "oversold_bonus": 0.0,
-          "total_score": 66.5,
+          "total_score": 67.0,
           "contributions": {
-            "disp20": 20.9,
-            "disp60": 7.0,
+            "disp20": 21.1,
+            "disp60": 7.1,
             "rsi_level": 22.0,
             "rsi_momentum": 4.7,
-            "weight_dev": 12.0
+            "weight_dev": 12.2
           },
           "dca_tier": {
             "label": "적립 ++",
@@ -313,12 +313,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 50.1
-            },
-            {
               "date": "08/18",
-              "score": 49.9
+              "score": 53.0
             },
             {
               "date": "08/19",
@@ -370,27 +366,31 @@
             },
             {
               "date": "09/04",
-              "score": 64.8
+              "score": 63.6
             },
             {
               "date": "09/07",
-              "score": 61.7
+              "score": 63.0
             },
             {
               "date": "09/08",
-              "score": 65.3
+              "score": 66.5
             },
             {
               "date": "09/09",
-              "score": 62.6
+              "score": 63.8
             },
             {
               "date": "09/10",
-              "score": 66.0
+              "score": 67.3
             },
             {
               "date": "09/11",
-              "score": 66.4
+              "score": 67.5
+            },
+            {
+              "date": "09/14",
+              "score": 66.9
             }
           ]
         },
@@ -398,40 +398,40 @@
           "code": "411060",
           "name": "ACE KRX금현물",
           "category": "정기",
-          "close": 26490.0,
-          "volume": 778447,
-          "disp20": -4.19,
-          "disp60": -3.16,
-          "rsi14": 40.4,
-          "prev_rsi14": 43.2,
+          "close": 26270.0,
+          "volume": 505284,
+          "disp20": -4.75,
+          "disp60": -3.81,
+          "rsi14": 38.4,
+          "prev_rsi14": 40.4,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
           "asset_class": "gold",
           "target_weight": 13.6,
           "qty": 91.0,
-          "eval_amount": 2410590.0,
+          "eval_amount": 2390570.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
           "current_weight": 14.6,
           "weight_dev": -1.0,
           "weight_dev_neutral": false,
-          "rsi_momentum_mult": 0.815,
-          "rsi_delta": -2.8,
-          "norm_disp20": 64.0,
-          "norm_disp60": 60.5,
-          "norm_rsi_level": 74.0,
-          "norm_rsi_momentum": 11.9,
-          "norm_rsi14": 74.0,
+          "rsi_momentum_mult": 0.851,
+          "rsi_delta": -2.0,
+          "norm_disp20": 65.8,
+          "norm_disp60": 62.7,
+          "norm_rsi_level": 79.0,
+          "norm_rsi_momentum": 21.7,
+          "norm_rsi14": 79.0,
           "norm_weight_dev": 26.7,
-          "total_score_base": 52.4,
+          "total_score_base": 55.1,
           "oversold_bonus": 0.0,
-          "total_score": 52.4,
+          "total_score": 55.1,
           "contributions": {
-            "disp20": 22.4,
-            "disp60": 6.1,
-            "rsi_level": 16.3,
-            "rsi_momentum": 1.0,
+            "disp20": 23.0,
+            "disp60": 6.3,
+            "rsi_level": 17.4,
+            "rsi_momentum": 1.7,
             "weight_dev": 6.7
           },
           "dca_tier": {
@@ -441,12 +441,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 37.9
-            },
-            {
               "date": "08/18",
-              "score": 37.4
+              "score": 34.3
             },
             {
               "date": "08/19",
@@ -498,7 +494,7 @@
             },
             {
               "date": "09/04",
-              "score": 50.5
+              "score": 50.4
             },
             {
               "date": "09/07",
@@ -510,7 +506,7 @@
             },
             {
               "date": "09/09",
-              "score": 54.4
+              "score": 54.3
             },
             {
               "date": "09/10",
@@ -518,7 +514,11 @@
             },
             {
               "date": "09/11",
-              "score": 52.3
+              "score": 52.2
+            },
+            {
+              "date": "09/14",
+              "score": 55.2
             }
           ]
         },
@@ -527,11 +527,11 @@
           "name": "ACE 미국30년국채액티브",
           "category": "정기",
           "close": 7055.0,
-          "volume": 1139554,
-          "disp20": -1.21,
-          "disp60": -3.03,
+          "volume": 665788,
+          "disp20": -1.14,
+          "disp60": -2.91,
           "rsi14": 36.9,
-          "prev_rsi14": 43.7,
+          "prev_rsi14": 36.9,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
           "asset_class": "bond",
@@ -541,26 +541,26 @@
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
-          "current_weight": 10.8,
-          "weight_dev": 2.8,
+          "current_weight": 10.9,
+          "weight_dev": 2.7,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 0.877,
-          "rsi_delta": -6.8,
-          "norm_disp20": 54.0,
-          "norm_disp60": 60.1,
+          "rsi_delta": 0.0,
+          "norm_disp20": 53.8,
+          "norm_disp60": 59.7,
           "norm_rsi_level": 82.8,
-          "norm_rsi_momentum": 6.1,
+          "norm_rsi_momentum": 50.0,
           "norm_rsi14": 82.8,
-          "norm_weight_dev": 52.0,
-          "total_score_base": 56.6,
+          "norm_weight_dev": 51.3,
+          "total_score_base": 59.8,
           "oversold_bonus": 0.0,
-          "total_score": 56.6,
+          "total_score": 59.8,
           "contributions": {
-            "disp20": 18.9,
+            "disp20": 18.8,
             "disp60": 6.0,
             "rsi_level": 18.2,
-            "rsi_momentum": 0.5,
-            "weight_dev": 13.0
+            "rsi_momentum": 4.0,
+            "weight_dev": 12.8
           },
           "dca_tier": {
             "label": "적립 +",
@@ -569,12 +569,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 58.6
-            },
-            {
               "date": "08/18",
-              "score": 61.6
+              "score": 66.8
             },
             {
               "date": "08/19",
@@ -630,7 +626,7 @@
             },
             {
               "date": "09/07",
-              "score": 52.1
+              "score": 52.0
             },
             {
               "date": "09/08",
@@ -642,11 +638,15 @@
             },
             {
               "date": "09/10",
-              "score": 52.6
+              "score": 52.5
             },
             {
               "date": "09/11",
               "score": 56.5
+            },
+            {
+              "date": "09/14",
+              "score": 59.8
             }
           ]
         },
@@ -654,48 +654,44 @@
           "code": "0052D0",
           "name": "TIGER 코리아배당다우존스",
           "category": "관찰",
-          "close": 15735.0,
-          "volume": 122227,
-          "disp20": 1.24,
-          "disp60": 2.0,
-          "rsi14": 54.4,
-          "prev_rsi14": 50.3,
+          "close": 15750.0,
+          "volume": 93532,
+          "disp20": 1.52,
+          "disp60": 2.18,
+          "rsi14": 55.0,
+          "prev_rsi14": 53.3,
           "oversold_days": 0,
           "oversold_threshold": 35.0,
           "asset_class": "equity",
           "target_weight": null,
           "qty": 24.0,
-          "eval_amount": 377640.0,
+          "eval_amount": 378000.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
           "current_weight": 2.3,
           "norm_weight_dev": null,
-          "rsi_momentum_mult": 0.566,
-          "rsi_delta": 4.1,
-          "norm_disp20": 45.9,
-          "norm_disp60": 43.3,
-          "norm_rsi_level": 39.0,
-          "norm_rsi_momentum": 78.3,
-          "norm_rsi14": 39.0,
-          "total_score": 47.0,
+          "rsi_momentum_mult": 0.556,
+          "rsi_delta": 1.7,
+          "norm_disp20": 44.9,
+          "norm_disp60": 42.7,
+          "norm_rsi_level": 37.5,
+          "norm_rsi_momentum": 65.7,
+          "norm_rsi14": 37.5,
+          "total_score": 44.7,
           "score_basis": "비중제외",
           "contributions": {
-            "disp20": 21.4,
-            "disp60": 5.8,
-            "rsi_level": 11.4,
-            "rsi_momentum": 8.4,
+            "disp20": 21.0,
+            "disp60": 5.7,
+            "rsi_level": 11.0,
+            "rsi_momentum": 7.0,
             "weight_dev": null
           },
           "dca_tier": null,
           "score_history": [
             {
-              "date": "08/14",
-              "score": 38.8
-            },
-            {
               "date": "08/18",
-              "score": 42.4
+              "score": 45.1
             },
             {
               "date": "08/19",
@@ -747,27 +743,31 @@
             },
             {
               "date": "09/04",
-              "score": 45.2
+              "score": 46.0
             },
             {
               "date": "09/07",
-              "score": 46.9
+              "score": 48.6
             },
             {
               "date": "09/08",
-              "score": 45.6
+              "score": 47.2
             },
             {
               "date": "09/09",
-              "score": 48.1
+              "score": 49.7
             },
             {
               "date": "09/10",
-              "score": 48.4
+              "score": 49.9
             },
             {
               "date": "09/11",
-              "score": 47.0
+              "score": 48.5
+            },
+            {
+              "date": "09/14",
+              "score": 44.7
             }
           ]
         }
@@ -776,20 +776,20 @@
         "status": "SIGNAL",
         "top_code": "309230",
         "top_name": "ACE 미국WideMoat동일가중",
-        "top_score": 67.4
+        "top_score": 67.5
       },
       "history_context": {
         "has_prev": true,
-        "score_change": 1.2,
+        "score_change": 0.1,
         "contribution_change": {
-          "disp20": -0.3,
-          "disp60": 0.7,
+          "disp20": -1.2,
+          "disp60": 0.2,
           "rsi_level": 0.0,
-          "rsi_momentum": -10.0,
+          "rsi_momentum": 6.7,
           "weight_dev": 0.0
         },
         "rank_change_note": null,
-        "persistence_days": 3
+        "persistence_days": 4
       },
       "dca_summary": {
         "base_count": 5,
@@ -798,55 +798,55 @@
             "name": "ACE 미국WideMoat동일가중",
             "code": "309230",
             "label": "적립 ++",
-            "score": 67.4
+            "score": 67.5
           },
           {
             "name": "KODEX 미국배당커버드콜 액티브",
             "code": "441640",
             "label": "적립 ++",
-            "score": 66.5
+            "score": 67.0
           },
           {
             "name": "ACE 미국30년국채액티브",
             "code": "453850",
             "label": "적립 +",
-            "score": 56.6
+            "score": 59.8
           },
           {
             "name": "ACE KRX금현물",
             "code": "411060",
             "label": "적립 +",
-            "score": 52.4
+            "score": 55.1
           },
           {
             "name": "TIGER 미국테크TOP10 INDXX",
             "code": "381170",
             "label": "적립 +",
-            "score": 51.9
+            "score": 49.6
           }
         ]
       }
     },
     "연금저축": {
       "all_zero_holdings": false,
-      "eval_sum": 6659010.0,
+      "eval_sum": 6664545.0,
       "stocks": [
         {
           "code": "360200",
           "name": "ACE 미국S&P500",
           "category": "정기",
-          "close": 25710.0,
-          "volume": 667413,
-          "disp20": -2.78,
-          "disp60": -6.43,
-          "rsi14": 27.7,
-          "prev_rsi14": 27.4,
-          "oversold_days": 5,
+          "close": 25735.0,
+          "volume": 760858,
+          "disp20": -2.32,
+          "disp60": -6.18,
+          "rsi14": 28.7,
+          "prev_rsi14": 27.7,
+          "oversold_days": 6,
           "oversold_threshold": 35.0,
           "asset_class": "equity",
           "target_weight": 50.0,
           "qty": 135.0,
-          "eval_amount": 3470850.0,
+          "eval_amount": 3474225.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
@@ -854,21 +854,21 @@
           "weight_dev": -2.1,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 1.0,
-          "rsi_delta": 0.3,
-          "norm_disp20": 59.3,
-          "norm_disp60": 71.4,
+          "rsi_delta": 1.0,
+          "norm_disp20": 57.7,
+          "norm_disp60": 70.6,
           "norm_rsi_level": 100.0,
-          "norm_rsi_momentum": 55.0,
+          "norm_rsi_momentum": 66.7,
           "norm_rsi14": 100.0,
           "norm_weight_dev": 19.3,
-          "total_score_base": 59.1,
+          "total_score_base": 59.4,
           "oversold_bonus": 4.0,
-          "total_score": 63.1,
+          "total_score": 63.4,
           "contributions": {
-            "disp20": 20.8,
+            "disp20": 20.2,
             "disp60": 7.1,
             "rsi_level": 22.0,
-            "rsi_momentum": 4.4,
+            "rsi_momentum": 5.3,
             "weight_dev": 4.8
           },
           "dca_tier": {
@@ -878,12 +878,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 39.2
-            },
-            {
               "date": "08/18",
-              "score": 43.1
+              "score": 45.7
             },
             {
               "date": "08/19",
@@ -935,27 +931,31 @@
             },
             {
               "date": "09/04",
-              "score": 59.0
+              "score": 58.9
             },
             {
               "date": "09/07",
-              "score": 55.1
+              "score": 55.0
             },
             {
               "date": "09/08",
-              "score": 58.8
+              "score": 58.7
             },
             {
               "date": "09/09",
-              "score": 57.9
+              "score": 57.8
             },
             {
               "date": "09/10",
-              "score": 60.3
+              "score": 60.2
             },
             {
               "date": "09/11",
-              "score": 63.2
+              "score": 63.1
+            },
+            {
+              "date": "09/14",
+              "score": 63.3
             }
           ]
         },
@@ -963,18 +963,18 @@
           "code": "402970",
           "name": "ACE 미국배당다우존스",
           "category": "정기",
-          "close": 14760.0,
-          "volume": 272198,
-          "disp20": -3.77,
-          "disp60": -5.28,
-          "rsi14": 26.3,
-          "prev_rsi14": 24.2,
-          "oversold_days": 5,
+          "close": 14770.0,
+          "volume": 208344,
+          "disp20": -3.33,
+          "disp60": -5.09,
+          "rsi14": 28.6,
+          "prev_rsi14": 25.8,
+          "oversold_days": 6,
           "oversold_threshold": 35.0,
           "asset_class": "equity",
           "target_weight": 50.0,
           "qty": 216.0,
-          "eval_amount": 3188160.0,
+          "eval_amount": 3190320.0,
           "data_sufficient": true,
           "is_outlier": false,
           "outlier_reason": null,
@@ -982,21 +982,21 @@
           "weight_dev": 2.1,
           "weight_dev_neutral": false,
           "rsi_momentum_mult": 1.0,
-          "rsi_delta": 2.1,
-          "norm_disp20": 62.6,
-          "norm_disp60": 67.6,
+          "rsi_delta": 2.8,
+          "norm_disp20": 61.1,
+          "norm_disp60": 67.0,
           "norm_rsi_level": 100.0,
-          "norm_rsi_momentum": 85.0,
+          "norm_rsi_momentum": 96.7,
           "norm_rsi14": 100.0,
           "norm_weight_dev": 47.3,
-          "total_score_base": 69.3,
+          "total_score_base": 69.6,
           "oversold_bonus": 4.0,
-          "total_score": 73.3,
+          "total_score": 73.6,
           "contributions": {
-            "disp20": 21.9,
-            "disp60": 6.8,
+            "disp20": 21.4,
+            "disp60": 6.7,
             "rsi_level": 22.0,
-            "rsi_momentum": 6.8,
+            "rsi_momentum": 7.7,
             "weight_dev": 11.8
           },
           "dca_tier": {
@@ -1006,12 +1006,8 @@
           },
           "score_history": [
             {
-              "date": "08/14",
-              "score": 46.0
-            },
-            {
               "date": "08/18",
-              "score": 47.8
+              "score": 50.5
             },
             {
               "date": "08/19",
@@ -1063,27 +1059,31 @@
             },
             {
               "date": "09/04",
-              "score": 56.8
+              "score": 56.7
             },
             {
               "date": "09/07",
-              "score": 61.8
+              "score": 62.2
             },
             {
               "date": "09/08",
-              "score": 65.3
+              "score": 65.7
             },
             {
               "date": "09/09",
-              "score": 65.3
+              "score": 65.7
             },
             {
               "date": "09/10",
-              "score": 68.4
+              "score": 68.8
             },
             {
               "date": "09/11",
-              "score": 73.4
+              "score": 73.7
+            },
+            {
+              "date": "09/14",
+              "score": 73.7
             }
           ]
         }
@@ -1092,20 +1092,20 @@
         "status": "SIGNAL",
         "top_code": "402970",
         "top_name": "ACE 미국배당다우존스",
-        "top_score": 73.3
+        "top_score": 73.6
       },
       "history_context": {
         "has_prev": true,
-        "score_change": 4.9,
+        "score_change": 0.3,
         "contribution_change": {
-          "disp20": -1.7,
-          "disp60": -1.1,
+          "disp20": -1.5,
+          "disp60": -0.6,
           "rsi_level": 0.0,
-          "rsi_momentum": 46.7,
-          "weight_dev": -0.7
+          "rsi_momentum": 11.7,
+          "weight_dev": 0.0
         },
         "rank_change_note": null,
-        "persistence_days": 5
+        "persistence_days": 6
       },
       "dca_summary": {
         "base_count": 2,
@@ -1114,13 +1114,13 @@
             "name": "ACE 미국배당다우존스",
             "code": "402970",
             "label": "적립 ++",
-            "score": 73.3
+            "score": 73.6
           },
           {
             "name": "ACE 미국S&P500",
             "code": "360200",
             "label": "적립 ++",
-            "score": 63.1
+            "score": 63.4
           }
         ]
       }
@@ -1128,8 +1128,8 @@
   },
   "market_summary": {
     "state": "시장 과매도 영역",
-    "state_detail": "시장 과매도 영역 (평균 RSI 31.4, 20일 이격 -3.17%)",
-    "avg_rsi14": 31.4,
-    "avg_disp20": -3.17
+    "state_detail": "시장 과매도 영역 (평균 RSI 30.9, 20일 이격 -3.07%)",
+    "avg_rsi14": 30.9,
+    "avg_disp20": -3.07
   }
 }
