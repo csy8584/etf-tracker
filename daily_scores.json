@@ -4,7 +4,7 @@
   "score_model_desc": "v2.2 + 과매도 지속 보조 가산점 (주식형 한정, 2026-06 백테스트 근거)",
   "generated_by": "update_prices.py v4",
   "data_date": "2026-09-18",
-  "generated_at": "2026-09-18 16:00:08 KST",
+  "generated_at": "2026-09-21 08:08:43 KST",
   "accounts": {
     "ISA": {
       "all_zero_holdings": false,
@@ -780,12 +780,12 @@
       },
       "history_context": {
         "has_prev": true,
-        "score_change": -7.0,
+        "score_change": -2.4,
         "contribution_change": {
-          "disp20": -3.7,
-          "disp60": -3.4,
-          "rsi_level": -18.8,
-          "rsi_momentum": -20.7,
+          "disp20": -1.1,
+          "disp60": -1.1,
+          "rsi_level": -4.8,
+          "rsi_momentum": -15.8,
           "weight_dev": 1.4
         },
         "rank_change_note": null,
@@ -1090,13 +1090,13 @@
       },
       "history_context": {
         "has_prev": true,
-        "score_change": -2.5,
+        "score_change": 0.3,
         "contribution_change": {
-          "disp20": -1.1,
+          "disp20": -0.6,
           "disp60": -0.4,
-          "rsi_level": 0.2,
-          "rsi_momentum": -35.3,
-          "weight_dev": 2.6
+          "rsi_level": -0.5,
+          "rsi_momentum": 6.3,
+          "weight_dev": 0.6
         },
         "rank_change_note": null,
         "persistence_days": 1
